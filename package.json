@@ -1,0 +1,63 @@
+{
+  "name": "supergym",
+  "version": "17.0.0",
+  "private": true,
+  "description": "Supergym - фитнес-центр",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "eslint": "^7.13.0",
+    "eslint-config-htmlacademy": "^0.6.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^4.14.1",
+    "posthtml-include": "^1.4.3",
+    "readable-stream": "^3.6.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "eslintrc": "eslint",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslintrc",
+    "build": "gulp build",
+    "start": "gulp start",
+    "images": "gulp images",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite",
+    "html": "gulp html",
+    "copy": "gulp copy",
+    "clean": "gulp clean"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "source/*.html",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "eslint": [
+    "source/js/*.js"
+  ],
+  "engines": {
+    "node": "8.16"
+  }
+}
