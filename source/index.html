@@ -43,11 +43,44 @@
       </ul>
     </div>
   </header>
-  <main></main>
+  <main>
+    <section class="gym">
+      <div class="gym__wrap">
+        <h2>Тренажерный зал</h2>
+        <p>Просторный зал площадью 900 кв/м</p>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
+          зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+          несколько оборудованных залов для различных видов групповых занятий.</p>
+      </div>
+      <div class="gym__photo">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)" srcset="img/gym-desk.webp 1x, img/gym-desk@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tab.webp 1x, img/gym-tab@2x.webp 2x">
+          <source type="image/webp" srcset="img/gym-mob.webp 1x, img/gym-mob@2x.webp 2x">
+
+          <source media="(min-width: 1366px)" srcset="img/gym-desk.jpg 1x, img/gym-desk@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/gym-tab.jpg 1x, img/gym-tab@2x.jpg 2x">
+          <img src="img/gym-mob.jpg" srcset="img/gym-mob@2x.jpg 2x" alt="Тренажерный зал Supergym">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="img/video-desk.webp 1x, img/video-desk@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tab.webp 1x, img/video-tab@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mob.webp 1x, img/video-mob@2x.webp 2x">
+
+          <source media="(min-width: 1366px)" srcset="img/video-desk.jpg 1x, img/video-desk@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tab.jpg 1x, img/video-tab@2x.jpg 2x">
+          <img src="img/video-mob.jpg" srcset="img/video-mob@2x.jpg 2x" alt="Видео тренажерного зала Supergym">
+        </picture>
+        <button type="button" aria-label="Смотреть видеo тренажерного зала Supergym"></button>
+      </div>
+    </section>
+  </main>
   <footer class="main-footer">
     <div class="main-footer__wrap container">
       <nav class="main-footer__nav main-nav">
-        <a>
+        <a class="lili">
           <svg class="logo" viewbox="0 0 89 20">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
@@ -70,6 +103,32 @@
           </li>
         </ul>
       </nav>
+      <!-- <nav class="main-footer__nav main-nav">
+        <ul class="main-nav__list">
+          <li>
+            <a>
+              <svg class="logo" viewbox="0 0 89 20">
+                <use xlink:href="img/sprite.svg#icon-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">Услуги</a>
+          </li>
+          <li>
+            <a href="">Абонементы</a>
+          </li>
+          <li>
+            <a href="">Акции</a>
+          </li>
+          <li>
+            <a href="">Тренеры</a>
+          </li>
+          <li>
+            <a href="">Расписание</a>
+          </li>
+        </ul>
+      </nav> -->
       <ul class="main-footer__social-list">
         <li>
           <a href="#" class="main-footer__social-link main-footer__social-link--vk"

@@ -1,0 +1,212 @@
+.gym {
+  display: flex;
+  justify-content: space-between;
+  max-width: $desktop-width-max-2;
+  margin: 0 auto;
+  padding-top: 119px;
+  padding-right: 103px;
+  padding-left: 103px;
+  color: $twilight-blue-color;
+
+  @media (max-width: $desktop-width-max-2) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 69px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.gym__wrap {
+  max-width: 405px;
+  padding-top: 48px;
+  padding-left: 44px;
+
+  @media (max-width: $desktop-width-max-2) {
+    padding-left: 0;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.gym h2 {
+  @include reset-indents;
+  padding-bottom: 7px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+  }
+}
+
+.gym p {
+  @include reset-indents;
+}
+
+.gym p:first-of-type {
+  padding-bottom: 40px;
+  font-size: 16px;
+  line-height: 27px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-right: 88px;
+    padding-bottom: 36px;
+    padding-left: 88px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-bottom: 23px;
+    padding-left: 0;
+    text-align: left;
+  }
+}
+
+.gym p:first-of-type + p {
+  padding-bottom: 7px;
+  font-weight: 300;
+  line-height: 24px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-right: 85px;
+    padding-bottom: 42px;
+    padding-left: 85px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 0;
+    padding-bottom: 33px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 60px;
+    text-align: left;
+  }
+}
+
+.gym p:last-of-type {
+  font-weight: 300;
+  line-height: 24px;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.gym__photo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.gym__photo picture:first-of-type {
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 34px;
+  }
+}
+
+.gym__photo picture:last-of-type {
+  margin-top: -117px;
+  margin-left: -35px;
+
+  @media (max-width: $desktop-width-max-2) {
+    margin: -117px auto 0;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin: -90px auto 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin: 0;
+  }
+}
+
+.gym__photo button {
+  @include reset-indents;
+  position: absolute;
+  top: 79%;
+  left: 23%;
+  width: 100px;
+  height: 100px;
+  background: url("../../img/play.svg") no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  @media (max-width: $desktop-width-max-2) {
+    left: 50%;
+    width: 73px;
+    height: 73px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    top: 80%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    top: 84%;
+    left: 50%;
+  }
+}
