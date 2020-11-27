@@ -1,21 +1,21 @@
-//-------------------------------INDEX-------------------------------//
+// body {
+//   background: url("../img/Mobile.jpg") no-repeat 50% 0;
+//   opacity: 0.2;
+//   // min-height: 3932px;
+// }
 
-body {
-  background: url("../img/Mobile.jpg") no-repeat 50% 0;
-  opacity: 0.2;
-  // min-height: 3932px;
-}
 
-@media (min-width: $tablet-width) {
-  body {
-    background: url("../img/Tablet.jpg") no-repeat 50% 0;
-    opacity: 0.2;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   body {
+//     background: url("../img/Tablet.jpg") no-repeat 50% 0;
+//     opacity: 0.2;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  body {
-    background: url("../img/Desktop.jpg") no-repeat 50% 0;
-    opacity: 0.2;
-  }
-}
+
+// @media (min-width: $desktop-width) {
+//   body {
+//     background: url("../img/Desktop.jpg") no-repeat 50% 0;
+//     opacity: 0.3;
+//   }
+// }

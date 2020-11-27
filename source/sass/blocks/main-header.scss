@@ -1,0 +1,209 @@
+.main-header {
+  padding-bottom: 5201px;
+  // padding-bottom: 78px;
+  background: // url("../img/header-back-desk.jpg") 65% 50% no-repeat,
+    linear-gradient(to right top, #003d85, #b80027);
+
+  @media (max-width: $desktop-width) {
+    // background-position: 70% 50%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 104px;
+    background: // url("../img/header-back-desk.jpg") 90% 50%/324px 390px no-repeat,
+      linear-gradient(to right top, #003d85, #b80027);
+  }
+
+  @media (max-width: $mobile-width-max) {
+    background: linear-gradient(to right top, #003d85, #b80027);
+  }
+}
+
+.main-header__logo-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 20px;
+  }
+}
+
+.main-header__tel {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $white-color;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.main-header__intro-wrap {
+  position: relative;
+  max-width: 395px;
+  padding-top: 112px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 460px;
+    width: 550px;
+    height: 556px;
+    background: url("../img/header-back-desk.jpg") no-repeat;
+  }
+
+  @media (max-width: $desktop-width-max-2) {
+    top: 7px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 325px;
+    padding-top: 72px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 354px;
+      width: 324px;
+      height: 390px;
+      background: url("../img/header-back-tab.jpg") no-repeat;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin: 0 auto;
+    padding-top: 70px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.main-header p {
+  @include reset-indents;
+  padding-bottom: 12px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 6px;
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 10px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.main-header h1 {
+  @include reset-indents;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 109px;
+  line-height: 109px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 78px;
+    line-height: 78px;
+  }
+}
+
+.main-header__intro-wrap ul:first-of-type {
+  @include reset-list;
+  max-width: 132px;
+  margin-top: -91px;
+  padding-bottom: 83px;
+  text-align: right;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 115px;
+    margin-top: -80px;
+    padding-bottom: 57px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: -73px;
+    padding-bottom: 54px;
+  }
+}
+
+.main-header__list li {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.main-header__social-list a {
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $white-color;
+}
+
+.main-header button {
+  display: block;
+  margin-left: auto;
+  padding: 20px 43px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: transparent;
+  border: 4px solid $white-color;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 20px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
+}
+
+.main-header__social-list {
+  @include reset-list;
+  width: 50px;
+  margin-top: -83px;
+  margin-left: auto;
+  text-align: right;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
