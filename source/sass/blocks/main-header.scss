@@ -41,7 +41,7 @@
   line-height: 26px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: $white-color;
+  color: $white;
 
   @media (max-width: $tablet-width-max) {
     font-size: 24px;
@@ -175,22 +175,13 @@
 .main-header__social-list a {
   font-size: 14px;
   line-height: 21px;
-  color: $white-color;
+  color: $white;
 }
 
-.main-header button {
-  display: block;
+.main-header__intro-wrap button {
   margin-left: auto;
-  padding: 20px 43px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $white-color;
-  background-color: transparent;
-  border: 4px solid $white-color;
-  cursor: pointer;
+  color: $white;
+  border: 4px solid $white;
 
   @media (max-width: $tablet-width-max) {
     padding: 20px;

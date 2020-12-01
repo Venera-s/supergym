@@ -44,10 +44,9 @@
 }
 
 .main-nav__list a {
-  font-family: "roboto condensed";
   font-size: 14px;
   line-height: 16px;
-  color: $white-color;
+  color: $white;
 
 
   @media (max-width: $mobile-width-max) {
