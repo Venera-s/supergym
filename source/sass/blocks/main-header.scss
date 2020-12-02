@@ -180,8 +180,10 @@
 
 .main-header__intro-wrap button {
   margin-left: auto;
+  padding: 20px 54px;
   color: $white;
   border: 4px solid $white;
+
 
   @media (max-width: $tablet-width-max) {
     padding: 20px;

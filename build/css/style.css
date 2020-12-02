@@ -399,8 +399,8 @@ html {
 .buy-btn {
   display: block;
   font-weight: 700;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: transparent;
@@ -561,6 +561,7 @@ html {
 
 .main-header__intro-wrap button {
   margin-left: auto;
+  padding: 20px 54px;
   color: #ffffff;
   border: 4px solid #ffffff; }
   @media (max-width: 1199px) {
@@ -742,9 +743,7 @@ html {
           justify-content: space-between;
   max-width: 1365px;
   margin: 0 auto;
-  padding-top: 119px;
-  padding-right: 103px;
-  padding-left: 103px;
+  padding: 119px 103px 114px;
   color: #102654; }
   @media (max-width: 1365px) {
     .gym {
@@ -766,7 +765,7 @@ html {
 .gym__wrap {
   max-width: 405px;
   padding-top: 48px;
-  padding-left: 44px; }
+  padding-left: 60px; }
   @media (max-width: 1365px) {
     .gym__wrap {
       padding-left: 0; } }
@@ -864,8 +863,10 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto; }
+          flex-direction: column; }
+  @media (max-width: 1199px) {
+    .gym__photo {
+      margin: 0 auto; } }
   @media (max-width: 767px) {
     .gym__photo {
       padding-right: 0;
@@ -877,7 +878,7 @@ html {
 
 .gym__photo picture:last-of-type {
   margin-top: -117px;
-  margin-left: -35px; }
+  margin-left: -63px; }
   @media (max-width: 1365px) {
     .gym__photo picture:last-of-type {
       margin: -117px auto 0; } }
@@ -892,8 +893,8 @@ html {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 79%;
-  left: 23%;
+  top: 77%;
+  left: 18%;
   width: 100px;
   height: 100px;
   background: url("../../img/play.svg") no-repeat;
@@ -927,6 +928,8 @@ html {
       left: 50%; } }
 
 .subscrip {
+  padding-top: 117px;
+  padding-bottom: 120px;
   background-color: #f8f9fc; }
 
 .subscrip ul {
@@ -935,6 +938,7 @@ html {
   list-style: none; }
 
 .subscrip__wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,12 +948,22 @@ html {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  z-index: 1; }
+  .subscrip__wrap::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: 0;
+    z-index: -1;
+    width: 324px;
+    height: 384px;
+    background: url("../../img/disk-desk.png") no-repeat; }
 
 .subscrip h2 {
   margin: 0;
   padding: 0;
-  padding-bottom: 50px;
+  padding-bottom: 37px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
@@ -968,9 +982,11 @@ html {
       line-height: 32px; } }
 
 .subscrip__months-wrap {
-  display: inline-block;
-  margin-bottom: 49px;
-  padding-bottom: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 38px;
+  padding-bottom: 12px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2); }
   @media (max-width: 1199px) {
     .subscrip__months-wrap {
@@ -1015,7 +1031,7 @@ html {
       line-height: 21px; } }
 
 .subscrip__months-item .subscrip__months-link--active {
-  padding-bottom: 23px;
+  padding-bottom: 15px;
   color: #102654;
   border-bottom: 2px solid #d10a42; }
 
@@ -1023,7 +1039,7 @@ html {
   margin: 0;
   padding: 0; }
   .subscrip__rate-item p:first-of-type {
-    padding-bottom: 22px;
+    padding-bottom: 13px;
     font-weight: 700;
     font-size: 24px;
     line-height: 27px;
@@ -1034,6 +1050,7 @@ html {
         font-size: 22px;
         line-height: 25px; } }
   .subscrip__rate-item p:last-of-type {
+    padding-bottom: 33px;
     font-weight: 700;
     font-size: 58px;
     line-height: 87px;
@@ -1048,12 +1065,13 @@ html {
   z-index: 1; }
   .subscrip__rate-price::before {
     position: absolute;
-    top: -24px;
+    top: -27px;
     left: -19px;
     width: 100px;
     height: 100px;
     font-size: 98px;
-    color: red;
+    color: #e8e8e8;
+    opacity: 0.48;
     z-index: -1; }
   .subscrip__rate-price--5000::before {
     content: "5000"; }
@@ -1063,20 +1081,25 @@ html {
     content: "2700"; }
 
 .subscrip__rate-item p:first-of-type + p {
+  padding-bottom: 70px;
   color: #495a7d; }
 
 .subscrip__rate-list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .subscrip__rate-list li {
-  padding: 68px 77px;
+  width: 360px;
+  margin-bottom: 20px;
+  padding: 7px;
   background-color: #ffffff; }
-  .subscrip__rate-list li:not(:last-child) {
+  .subscrip__rate-list li:not(:nth-child(3n)) {
     margin-right: 40px; }
     @media (max-width: 1199px) {
-      .subscrip__rate-list li:not(:last-child) {
+      .subscrip__rate-list li:not(:nth-child(3n)) {
         margin-right: 0; } }
   @media (max-width: 1199px) {
     .subscrip__rate-list li {
@@ -1085,6 +1108,10 @@ html {
   @media (max-width: 767px) {
     .subscrip__rate-list li {
       padding: 55px 42px; } }
+
+.subscrip__rate-list .subscrip__rate-item--border {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+  background-image: linear-gradient(to right bottom, #d10a42, #00359f); }
 
 .subscrip__rate-wrap {
   display: -webkit-box;
@@ -1098,9 +1125,17 @@ html {
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding: 58px 47px;
+  background-color: #ffffff; }
 
-.subscrip__rate-item a:first-of-type {
-  padding: 28px 45px;
+.subscrip__rate-btn {
+  padding: 24px 43px;
   color: #102654;
   border: 2px solid #102654; }
+  .subscrip__rate-btn--color {
+    color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+    background-image: linear-gradient(90deg, #ed0233, #003eb7);
+    background-origin: border-box;
+    border-color: transparent; }
