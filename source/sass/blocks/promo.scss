@@ -1,0 +1,29 @@
+.promo {
+  width: 500px;
+  padding-top: 100px;
+  padding-left: 78px;
+  padding-right: 78px;
+  background-color: #ed0233;
+}
+
+.promo p {
+  @include reset-indents;
+}
+
+.promo h2 {
+  @include reset-indents;
+}
+
+.promo__btn {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $white;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}

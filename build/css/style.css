@@ -927,17 +927,25 @@ html {
       top: 84%;
       left: 50%; } }
 
-.subscrip {
+.membership {
   padding-top: 117px;
-  padding-bottom: 120px;
-  background-color: #f8f9fc; }
+  padding-bottom: 100px;
+  background-color: #f8f9fc;
+  overflow: hidden; }
+  @media (max-width: 1199px) {
+    .membership {
+      padding-top: 79px; } }
+  @media (max-width: 767px) {
+    .membership {
+      padding-top: 19px;
+      padding-bottom: 70px; } }
 
-.subscrip ul {
+.membership ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.subscrip__wrap {
+.membership__wrap {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,17 +958,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1; }
-  .subscrip__wrap::after {
-    content: "";
-    position: absolute;
-    top: 70%;
-    right: 0;
-    z-index: -1;
-    width: 324px;
-    height: 384px;
-    background: url("../../img/disk-desk.png") no-repeat; }
 
-.subscrip h2 {
+.membership h2 {
   margin: 0;
   padding: 0;
   padding-bottom: 37px;
@@ -971,17 +970,17 @@ html {
   letter-spacing: 0.03em;
   color: #102654; }
   @media (max-width: 1199px) {
-    .subscrip h2 {
-      padding-bottom: 45px;
+    .membership h2 {
+      padding-bottom: 32px;
       font-size: 42px;
       line-height: 42px; } }
   @media (max-width: 767px) {
-    .subscrip h2 {
-      padding-bottom: 35px;
+    .membership h2 {
+      padding-bottom: 25px;
       font-size: 32px;
       line-height: 32px; } }
 
-.subscrip__months-wrap {
+.membership__months-wrap {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -989,13 +988,13 @@ html {
   padding-bottom: 12px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2); }
   @media (max-width: 1199px) {
-    .subscrip__months-wrap {
+    .membership__months-wrap {
       margin-bottom: 45px; } }
   @media (max-width: 767px) {
-    .subscrip__months-wrap {
+    .membership__months-wrap {
       margin-bottom: 35px; } }
 
-.subscrip__months-list {
+.membership__months-list {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,63 +1006,64 @@ html {
           justify-content: center;
   margin-bottom: 20px; }
 
-.subscrip__months-list li:not(:last-child) {
+.membership__months-list li:not(:last-child) {
   padding-right: 46px; }
   @media (max-width: 1199px) {
-    .subscrip__months-list li:not(:last-child) {
+    .membership__months-list li:not(:last-child) {
       padding-right: 54px; } }
   @media (max-width: 767px) {
-    .subscrip__months-list li:not(:last-child) {
-      padding-right: 45px; } }
+    .membership__months-list li:not(:last-child) {
+      padding-right: 58px; } }
 
-.subscrip__months-list a {
+.membership__months-list a {
   position: relative;
   font-size: 18px;
   line-height: 27px;
   color: rgba(16, 38, 84, 0.5); }
   @media (max-width: 1199px) {
-    .subscrip__months-list a {
+    .membership__months-list a {
       font-size: 16px;
       line-height: 24px; } }
   @media (max-width: 767px) {
-    .subscrip__months-list a {
+    .membership__months-list a {
       font-size: 14px;
       line-height: 21px; } }
 
-.subscrip__months-item .subscrip__months-link--active {
+.membership__months-item .membership__months-link--active {
   padding-bottom: 15px;
   color: #102654;
   border-bottom: 2px solid #d10a42; }
 
-.subscrip__rate-item p {
+.membership__rate-item p {
   margin: 0;
   padding: 0; }
-  .subscrip__rate-item p:first-of-type {
+  .membership__rate-item p:first-of-type {
     padding-bottom: 13px;
     font-weight: 700;
     font-size: 24px;
     line-height: 27px;
     color: #102654; }
     @media (max-width: 767px) {
-      .subscrip__rate-item p:first-of-type {
-        padding-bottom: 20px;
+      .membership__rate-item p:first-of-type {
+        padding-bottom: 11px;
         font-size: 22px;
         line-height: 25px; } }
-  .subscrip__rate-item p:last-of-type {
+  .membership__rate-item p:last-of-type {
     padding-bottom: 33px;
     font-weight: 700;
     font-size: 58px;
     line-height: 87px;
     color: #103aae; }
-  @media (max-width: 767px) {
-    .subscrip__rate-item p {
-      font-size: 46px;
-      line-height: 69px; } }
+    @media (max-width: 767px) {
+      .membership__rate-item p:last-of-type {
+        padding-bottom: 30px;
+        font-size: 46px;
+        line-height: 69px; } }
 
-.subscrip__rate-price {
+.membership__rate-price {
   position: relative;
   z-index: 1; }
-  .subscrip__rate-price::before {
+  .membership__rate-price::before {
     position: absolute;
     top: -27px;
     left: -19px;
@@ -1073,47 +1073,78 @@ html {
     color: #e8e8e8;
     opacity: 0.48;
     z-index: -1; }
-  .subscrip__rate-price--5000::before {
+    @media (max-width: 1199px) {
+      .membership__rate-price::before {
+        top: -22px;
+        left: -18px; } }
+    @media (max-width: 767px) {
+      .membership__rate-price::before {
+        font-size: 80px; } }
+  .membership__rate-price--5000::before {
     content: "5000"; }
-  .subscrip__rate-price--1700::before {
+  .membership__rate-price--1700::before {
     content: "1700"; }
-  .subscrip__rate-price--2700::before {
+  .membership__rate-price--2700::before {
     content: "2700"; }
 
-.subscrip__rate-item p:first-of-type + p {
+.membership__rate-item p:first-of-type + p {
   padding-bottom: 70px;
   color: #495a7d; }
+  @media (max-width: 767px) {
+    .membership__rate-item p:first-of-type + p {
+      padding-bottom: 58px; } }
 
-.subscrip__rate-list {
+.membership__rate-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 1365px) {
+    .membership__rate-list {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media (max-width: 1199px) {
+    .membership__rate-list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
-.subscrip__rate-list li {
+.membership__rate-list li {
   width: 360px;
   margin-bottom: 20px;
   padding: 7px;
   background-color: #ffffff; }
-  .subscrip__rate-list li:not(:nth-child(3n)) {
+  @media (max-width: 1199px) {
+    .membership__rate-list li {
+      margin-bottom: 0; } }
+  .membership__rate-list li:not(:nth-child(3n)) {
     margin-right: 40px; }
     @media (max-width: 1199px) {
-      .subscrip__rate-list li:not(:nth-child(3n)) {
+      .membership__rate-list li:not(:nth-child(3n)) {
         margin-right: 0; } }
+  @media (max-width: 1365px) {
+    .membership__rate-list li {
+      margin-right: 40px; } }
   @media (max-width: 1199px) {
-    .subscrip__rate-list li {
-      padding-right: 77px;
-      padding-left: 77px; } }
+    .membership__rate-list li {
+      margin-right: 0; } }
+  @media (max-width: 1199px) {
+    .membership__rate-list li {
+      width: 442px; }
+      .membership__rate-list li:not(:last-child) {
+        margin-bottom: 40px; } }
   @media (max-width: 767px) {
-    .subscrip__rate-list li {
-      padding: 55px 42px; } }
+    .membership__rate-list li {
+      width: 290px; } }
 
-.subscrip__rate-list .subscrip__rate-item--border {
+.membership__rate-list .membership__rate-item--border {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
   background-image: linear-gradient(to right bottom, #d10a42, #00359f); }
 
-.subscrip__rate-wrap {
+.membership__rate-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1128,14 +1159,44 @@ html {
           align-items: center;
   padding: 58px 47px;
   background-color: #ffffff; }
+  @media (max-width: 767px) {
+    .membership__rate-wrap {
+      padding: 43px 34px; } }
 
-.subscrip__rate-btn {
+.membership__rate-btn {
   padding: 24px 43px;
   color: #102654;
   border: 2px solid #102654; }
-  .subscrip__rate-btn--color {
+  .membership__rate-btn--color {
     color: #ffffff;
     background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
     background-image: linear-gradient(90deg, #ed0233, #003eb7);
     background-origin: border-box;
     border-color: transparent; }
+
+.promo {
+  width: 500px;
+  padding-top: 100px;
+  padding-left: 78px;
+  padding-right: 78px;
+  background-color: #ed0233; }
+
+.promo p {
+  margin: 0;
+  padding: 0; }
+
+.promo h2 {
+  margin: 0;
+  padding: 0; }
+
+.promo__btn {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff; }
+  @media (max-width: 1199px) {
+    .promo__btn {
+      font-size: 8px;
+      line-height: 10px; } }

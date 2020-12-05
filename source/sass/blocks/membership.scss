@@ -1,33 +1,57 @@
-.subscrip {
+.membership {
   padding-top: 117px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   background-color: $grey-blue;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 79px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 19px;
+    padding-bottom: 70px;
+  }
 }
 
-.subscrip ul {
+.membership ul {
   @include reset-list;
 }
 
-.subscrip__wrap {
+.membership__wrap {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 1;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 70%;
-    right: 0;
-    z-index: -1;
-    width: 324px;
-    height: 384px;
-    background: url("../../img/disk-desk.png") no-repeat;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -39%;
+  //   right: -13%;
+  //   z-index: -1;
+  //   width: 470px;
+  //   height: 494px;
+  //   background: url("../../img/disk-desk.png")  no-repeat;
+  //   background-size: contain;
+  //   // TODO: 100% 100%/contain
+
+  //   @media (max-width: $tablet-width-max) {
+  //     bottom: -11%;
+  //     right: -10%;
+  //     width: 423px;
+  //     height: 444px;
+  //     background-size: contain;
+  //   }
+
+  //   @media (max-width: $mobile-width-max) {
+  //     display: none;
+  //   }
+  // }
 }
 
-.subscrip h2 {
+.membership h2 {
   @include reset-indents;
   padding-bottom: 37px;
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -38,19 +62,19 @@
   color: $twilight-blue;
 
   @media (max-width: $tablet-width-max) {
-    padding-bottom: 45px;
+    padding-bottom: 32px;
     font-size: 42px;
     line-height: 42px;
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-bottom: 35px;
+    padding-bottom: 25px;
     font-size: 32px;
     line-height: 32px;
   }
 }
 
-.subscrip__months-wrap {
+.membership__months-wrap {
   display: inline-flex;
   margin-bottom: 38px;
   padding-bottom: 12px;
@@ -65,7 +89,7 @@
   }
 }
 
-.subscrip__months-list {
+.membership__months-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +97,7 @@
   margin-bottom: 20px;
 }
 
-.subscrip__months-list li {
+.membership__months-list li {
   &:not(:last-child) {
     padding-right: 46px;
 
@@ -82,13 +106,12 @@
     }
 
     @media (max-width: $mobile-width-max) {
-      padding-right: 45px;
+      padding-right: 58px;
     }
   }
 }
 
-
-.subscrip__months-list a {
+.membership__months-list a {
   position: relative;
   font-size: 18px;
   line-height: 27px;
@@ -105,13 +128,13 @@
   }
 }
 
-.subscrip__months-item .subscrip__months-link--active {
+.membership__months-item .membership__months-link--active {
   padding-bottom: 15px;
   color: $twilight-blue;
   border-bottom: 2px solid #d10a42;
 }
 
-.subscrip__rate-item p {
+.membership__rate-item p {
   @include reset-indents;
 
   &:first-of-type {
@@ -122,7 +145,7 @@
     color: $twilight-blue;
 
     @media (max-width: $mobile-width-max) {
-      padding-bottom: 20px;
+      padding-bottom: 11px;
       font-size: 22px;
       line-height: 25px;
     }
@@ -134,15 +157,16 @@
     font-size: 58px;
     line-height: 87px;
     color: $dark-blue;
-  }
 
-  @media (max-width: $mobile-width-max) {
-    font-size: 46px;
-    line-height: 69px;
+    @media (max-width: $mobile-width-max) {
+      padding-bottom: 30px;
+      font-size: 46px;
+      line-height: 69px;
+    }
   }
 }
 
-.subscrip__rate-price {
+.membership__rate-price {
   position: relative;
   z-index: 1;
 
@@ -156,6 +180,15 @@
     color: #e8e8e8;
     opacity: 0.48;
     z-index: -1;
+
+    @media (max-width: $tablet-width-max) {
+      top: -22px;
+      left: -18px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      font-size: 80px;
+    }
   }
 
   &--5000::before {
@@ -171,22 +204,37 @@
   }
 }
 
-.subscrip__rate-item p:first-of-type + p {
+.membership__rate-item p:first-of-type + p {
   padding-bottom: 70px;
   color: $dark-grey-blue;
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 58px;
+  }
 }
 
-.subscrip__rate-list {
+.membership__rate-list {
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $desktop-width-max-2) {
+    justify-content: center;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+  }
 }
 
-.subscrip__rate-list li {
+.membership__rate-list li {
   width: 360px;
   margin-bottom: 20px;
   padding: 7px;
   background-color: $white;
-  // border: 7px solid $white;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 0;
+  }
 
 
   &:not(:nth-child(3n)) {
@@ -197,35 +245,46 @@
     }
   }
 
+  @media (max-width: $desktop-width-max-2) {
+    margin-right: 40px;
+  }
+
   @media (max-width: $tablet-width-max) {
-    padding-right: 77px;
-    padding-left: 77px;
+    margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 442px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 
   @media (max-width: $mobile-width-max) {
-    padding: 55px 42px;
+    width: 290px;
   }
 }
 
-.subscrip__rate-list .subscrip__rate-item--border {
+.membership__rate-list .membership__rate-item--border {
   background-image: linear-gradient(to right bottom, #d10a42, #00359f);
 }
 
-// .subscrip__rate-list .subscrip__rate-item--border {
-//   border-image: linear-gradient(to right bottom, #d10a42, #00359f);
-//   border-image-slice: 1;
-// }
 
-.subscrip__rate-wrap {
+.membership__rate-wrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   padding: 58px 47px;
   background-color: $white;
+
+  @media (max-width: $mobile-width-max) {
+    padding: 43px 34px;
+  }
 }
 
-.subscrip__rate-btn {
+.membership__rate-btn {
   padding: 24px 43px;
   color: $twilight-blue;
   border: 2px solid $twilight-blue;
@@ -236,4 +295,8 @@
     background-origin: border-box;
     border-color: transparent;
   }
+
+  // @media (max-width: $mobile-width-max) {
+  //   padding: 24px 43px;
+  // }
 }
