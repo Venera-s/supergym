@@ -1,0 +1,78 @@
+.coach h2 {
+  @include reset-indents;
+  padding-bottom: 51px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $twilight-blue;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 50px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.coach__list {
+  @include reset-list;
+  display: flex;
+}
+
+.coach__list > li {
+  padding-bottom: 40px;
+
+  &:not(:last-child) {
+    padding-right: 40px;
+  }
+}
+
+.coach__wrap {
+  position: relative;
+  // z-index: 1;
+}
+
+.coach__img h3 {
+  margin-top: -55px;
+}
+
+.coach__card {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 53px 46px 51px 61px;
+  text-align: center;
+  background-color: rgba(#102654e3, 0.89);
+}
+
+.coach__card p {
+  &:first-of-type {
+    padding-bottom: 10px;
+  }
+
+  &:last-of-type {
+    @include reset-indents;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.coach__card-info {
+  padding-left: 10px;
+  list-style-type: disc;
+  text-align: left;
+}
+
+.coach__card-info li {
+  &:not(:last-child) {
+    padding-bottom: 14px;
+  }
+}
