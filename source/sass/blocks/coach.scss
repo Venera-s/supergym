@@ -9,9 +9,10 @@
   color: $twilight-blue;
 
   @media (max-width: $tablet-width-max) {
-    padding-bottom: 50px;
+    padding-bottom: 41px;
     font-size: 42px;
     line-height: 42px;
+    text-align: center;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -22,7 +23,42 @@
 
 .coach__list {
   @include reset-list;
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 131px;
+    width: 16px;
+    height: 32px;
+  }
+
+  &::before {
+    left: -57px;
+    background: url("../../img/arrow-left.svg") no-repeat;
+    background-size: cover;
+
+    @media (max-width: $tablet-width-max) {
+      left: 0;
+    }
+  }
+
+  &::after {
+    right: -57px;
+    background: url("../../img/arrow-right.svg") no-repeat;
+    background-size: contain;
+
+    @media (max-width: $tablet-width-max) {
+      right: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    justify-content: center;
+  }
 }
 
 .coach__list > li {
@@ -30,12 +66,25 @@
 
   &:not(:last-child) {
     padding-right: 40px;
+
+    @media (max-width: $tablet-width-max) {
+      padding-right: 0;
+
+      &:not(:nth-child(2n)):not(:last-child) {
+        padding-right: 30px;
+      }
+    }
+
+    @media (max-width: $mobile-width-max) {
+      &:not(:nth-child(2n)):not(:last-child) {
+        padding-right: 0;
+      }
+    }
   }
 }
 
 .coach__wrap {
   position: relative;
-  // z-index: 1;
 }
 
 .coach__img h3 {
@@ -49,7 +98,7 @@
   left: 0;
   padding: 53px 46px 51px 61px;
   text-align: center;
-  background-color: rgba(#102654e3, 0.89);
+  background-color: rgba($twilight-blue, 0.89);
 }
 
 .coach__card p {

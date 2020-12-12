@@ -1179,23 +1179,29 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin-top: 121px;
-  padding-right: 103px;
-  padding-bottom: 119px;
-  padding-left: 103px; }
+  padding-bottom: 119px; }
   @media (max-width: 1199px) {
     .promo {
       margin-top: 102px;
-      padding-right: 45px;
-      padding-left: 45px; } }
+      padding-bottom: 99px; } }
   @media (max-width: 767px) {
     .promo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       margin-top: 71px;
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-bottom: 200px; } }
 
 .promo__wrap {
-  width: 50%;
+  width: 45%;
   background-color: #ed0233; }
+  @media (max-width: 767px) {
+    .promo__wrap {
+      width: 100%; } }
 
 .promo__desc {
   width: 500px;
@@ -1204,16 +1210,15 @@ html {
   @media (max-width: 1199px) {
     .promo__desc {
       width: 292px;
-      padding: 49px 45px; } }
+      padding: 50px 45px 51px; } }
   @media (max-width: 767px) {
     .promo__desc {
       width: 290px;
-      margin: 0 auto;
       padding: 49px 45px; } }
 
 .promo__background {
   position: relative;
-  width: 50%; }
+  width: 65%; }
   .promo__background::before {
     content: "";
     position: absolute;
@@ -1223,6 +1228,18 @@ html {
     height: 500px;
     background: url("../../img/ticket-desk.jpg") 50% 100% no-repeat;
     background-color: #000145; }
+    @media (max-width: 1199px) {
+      .promo__background::before {
+        width: 100%;
+        height: 292px;
+        background-size: contain; } }
+    @media (max-width: 767px) {
+      .promo__background::before {
+        background: url("../../img/ticket-mob.jpg") 50% 50% no-repeat;
+        background-size: cover; } }
+  @media (max-width: 767px) {
+    .promo__background {
+      width: 100%; } }
 
 .promo p {
   margin: 0;
@@ -1410,9 +1427,10 @@ html {
   color: #102654; }
   @media (max-width: 1199px) {
     .coach h2 {
-      padding-bottom: 50px;
+      padding-bottom: 41px;
       font-size: 42px;
-      line-height: 42px; } }
+      line-height: 42px;
+      text-align: center; } }
   @media (max-width: 767px) {
     .coach h2 {
       font-size: 32px;
@@ -1422,14 +1440,50 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .coach__list::before, .coach__list::after {
+    content: "";
+    position: absolute;
+    top: 131px;
+    width: 16px;
+    height: 32px; }
+  .coach__list::before {
+    left: -57px;
+    background: url("../../img/arrow-left.svg") no-repeat;
+    background-size: cover; }
+    @media (max-width: 1199px) {
+      .coach__list::before {
+        left: 0; } }
+  .coach__list::after {
+    right: -57px;
+    background: url("../../img/arrow-right.svg") no-repeat;
+    background-size: contain; }
+    @media (max-width: 1199px) {
+      .coach__list::after {
+        right: 0; } }
+  @media (max-width: 1199px) {
+    .coach__list {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .coach__list > li {
   padding-bottom: 40px; }
   .coach__list > li:not(:last-child) {
     padding-right: 40px; }
+    @media (max-width: 1199px) {
+      .coach__list > li:not(:last-child) {
+        padding-right: 0; }
+        .coach__list > li:not(:last-child):not(:nth-child(2n)):not(:last-child) {
+          padding-right: 30px; } }
+    @media (max-width: 767px) {
+      .coach__list > li:not(:last-child):not(:nth-child(2n)):not(:last-child) {
+        padding-right: 0; } }
 
 .coach__wrap {
   position: relative; }
@@ -1471,3 +1525,193 @@ html {
   font-size: 18px;
   line-height: 27px;
   text-align: center; }
+
+.benefits {
+  background-color: #f8f9fc; }
+
+.benefits h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #102654; }
+  @media (max-width: 1199px) {
+    .benefits h2 {
+      font-size: 42px;
+      line-height: 42px; } }
+  @media (max-width: 767px) {
+    .benefits h2 {
+      font-size: 32px;
+      line-height: 32px; } }
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 392px; }
+
+.benefits__item--area {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.benefits__item--parking {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4; }
+
+.benefits__item--comfort {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.benefits__item--experience {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5; }
+
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 340px; }
+
+.benefits__item--middle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  width: 240px;
+  height: 277px;
+  margin-top: 25px;
+  background-color: #1c3374; }
+
+.benefits__stats {
+  padding-right: 30px; }
+
+.benefits__stats p {
+  margin: 0;
+  padding: 0; }
+  .benefits__stats p:first-child {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 106px;
+    color: red; }
+  .benefits__stats p:last-child {
+    color: #2e35ac; }
+
+.benefits__stats-info {
+  padding-top: 18px; }
+
+.benefits__stats-info p {
+  margin: 0;
+  padding: 0;
+  color: #102654; }
+  .benefits__stats-info p:first-child {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px; }
+  .benefits__stats-info p:last-child {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px; }
+
+.benefits__stats--color p:first-child {
+  font-size: 74px;
+  line-height: 11px; }
+
+.benefits__stats--color p:last-child {
+  font-size: 26px;
+  line-height: 39px; }
+
+.benefits__item--middle p {
+  color: #ffffff; }
+
+.discount h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #102654; }
+  @media (max-width: 1199px) {
+    .discount h2 {
+      font-size: 42px;
+      line-height: 42px; } }
+  @media (max-width: 767px) {
+    .discount h2 {
+      font-size: 32px;
+      line-height: 32px; } }
+
+.discount__membership {
+  width: 50%;
+  padding-right: 40px; }
+
+.membership-unlimited {
+  width: 280px; }
+
+.membership-unlimited__wrap {
+  padding: 45px;
+  background-color: #ed0233; }
+
+.membership-unlimited__wrap p {
+  margin: 0;
+  padding: 0; }
+  .membership-unlimited__wrap p:first-of-type {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px; }
+  .membership-unlimited__wrap p:last-of-type {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 109px; }
+
+.membership-unlimited__wrap h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px; }
+  @media (max-width: 767px) {
+    .membership-unlimited__wrap h2 {
+      text-align: center; } }
+
+.membership-unlimited__wrap a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff; }

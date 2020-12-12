@@ -1,27 +1,28 @@
 .promo {
   display: flex;
   margin-top: 121px;
-  padding-right: 103px;
   padding-bottom: 119px;
-  padding-left: 103px;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 102px;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-bottom: 99px;
   }
 
   @media (max-width: $mobile-width-max) {
+    display: flex;
+    flex-direction: column;
     margin-top: 71px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-bottom: 200px;
   }
 }
 
 .promo__wrap {
-  width: 50%;
-  // padding-right: 660px;
+  width: 45%;
   background-color: #ed0233;
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
 
 
   // @media (max-width: $desktop-width-max-2) {
@@ -59,19 +60,18 @@
 
   @media (max-width: $tablet-width-max) {
     width: 292px;
-    padding: 49px 45px;
+    padding: 50px 45px 51px;
   }
 
   @media (max-width: $mobile-width-max) {
     width: 290px;
-    margin: 0 auto;
     padding: 49px 45px;
   }
 }
 
 .promo__background {
   position: relative;
-  width: 50%;
+  width: 65%;
 
   &::before {
     content: "";
@@ -82,6 +82,21 @@
     height: 500px;
     background: url("../../img/ticket-desk.jpg") 50% 100% no-repeat;
     background-color: #000145;
+
+    @media (max-width: $tablet-width-max) {
+      width: 100%;
+      height: 292px;
+      background-size: contain;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      background: url("../../img/ticket-mob.jpg") 50% 50% no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
   }
 
   // @media (max-width: $tablet-width-max) {

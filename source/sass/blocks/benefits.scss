@@ -1,0 +1,140 @@
+.benefits {
+  background-color: $grey-blue;
+}
+
+.benefits h2 {
+  @include reset-indents;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $twilight-blue;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.benefits__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 392px;
+}
+
+.benefits__item--area {
+  order: 1;
+}
+
+.benefits__item--parking {
+  order: 4;
+}
+
+.benefits__item--comfort {
+  order: 2;
+}
+
+.benefits__item--experience {
+  order: 5;
+}
+
+.benefits__item {
+  display: flex;
+  width: 340px;
+  // align-items: center;
+
+  // &:nth-child(odd) {
+  //   padding-right: 60px;
+  // }
+
+  // &:nth-child(even) {
+  //   padding-left: 60px;
+  // }
+}
+
+
+.benefits__item--middle {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  order: 3;
+  width: 240px;
+  height: 277px;
+  margin-top: 25px;
+  background-color: $twilight-light-blue;
+}
+
+.benefits__stats {
+  padding-right: 30px;
+  // flex-direction: column;
+  // align-items: center;
+  // background: linear-gradient(#d10a42, #0041ca);
+}
+
+.benefits__stats p {
+  @include reset-indents;
+
+  &:first-child {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 106px;
+    color: red;
+    // background: white;
+    // mix-blend-mode: screen;
+  }
+
+  &:last-child {
+    color: $medium-dark-blue;
+  }
+}
+
+.benefits__stats-info {
+  padding-top: 18px;
+}
+
+
+.benefits__stats-info p {
+  @include reset-indents;
+  color: $twilight-blue;
+
+  &:first-child {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &:last-child {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.benefits__stats--color p {
+  // color: $white;
+
+  &:first-child {
+    font-size: 74px;
+    line-height: 11px;
+  }
+
+  &:last-child {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
+.benefits__item--middle p {
+  color: $white;
+}

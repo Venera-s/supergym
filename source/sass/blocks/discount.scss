@@ -1,0 +1,25 @@
+.discount h2 {
+  @include reset-indents;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $twilight-blue;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.discount__membership {
+  width: 50%;
+  padding-right: 40px;
+}

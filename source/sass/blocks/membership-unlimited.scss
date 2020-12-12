@@ -1,0 +1,45 @@
+.membership-unlimited {
+  width: 280px;
+}
+
+.membership-unlimited__wrap {
+  padding: 45px;
+  background-color: $rose-red;
+}
+
+.membership-unlimited__wrap p {
+  @include reset-indents;
+
+  &:first-of-type {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  &:last-of-type {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 109px;
+  }
+}
+
+.membership-unlimited__wrap h2 {
+  @include reset-indents;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  @media (max-width: $mobile-width-max) {
+    text-align: center;
+  }
+}
+
+.membership-unlimited__wrap a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: $white;
+}
