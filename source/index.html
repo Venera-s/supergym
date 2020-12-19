@@ -300,31 +300,42 @@
       </ul>
     </section>
 
+    <!-- TODO: нужно сделать секцию -->
     <section class="benefits">
       <div class="container">
         <h2>Наши преимущества</h2>
         <ul class="benefits__list">
           <li class="benefits__item benefits__item--area">
             <div class="benefits__stats">
-              <p>900</p>
+              <div class="benefits__number">
+                <p>900</p>
+              </div>
               <p>кв/м</p>
             </div>
             <div class="benefits__stats-info">
-              <p>Собственная парковка</p>
+              <p>Площадь</p>
               <p>Занимайтесь без очередей и толпучки</p>
             </div>
           </li>
           <li class="benefits__item benefits__item--parking">
             <div class="benefits__stats">
-              <p>70</p>
+              <div class="benefits__number">
+                <p>70</p>
+              </div>
               <p>машин</p>
             </div>
             <div class="benefits__stats-info">
-              <p>Площадь</p>
+              <p>Собственная парковка</p>
               <p>Вы всегда найдете место для своей машины на нашей парковке</p>
             </div>
           </li>
-          <li class="benefits__item benefits__item--middle">
+          <li class="benefits__item--middle">
+              <p>100</p>
+              <p>Тренажеров</p>
+              <p>Современные тренажеры на все группы мышц</p>
+          </li>
+
+          <!-- <li class="benefits__item benefits__item--middle">
             <div class="benefits__stats benefits__stats--color">
               <p>100</p>
               <p>Тренажеров</p>
@@ -332,10 +343,12 @@
             <div class="benefits__stats-info benefits__stats-info--color">
               <p>Современные тренажеры на все группы мышц</p>
             </div>
-          </li>
+          </li> -->
           <li class="benefits__item benefits__item--comfort">
             <div class="benefits__stats">
-              <p>350</p>
+              <div class="benefits__number">
+                <p>350</p>
+              </div>
               <p>мест</p>
             </div>
             <div class="benefits__stats-info">
@@ -346,7 +359,9 @@
           </li>
           <li class="benefits__item benefits__item--experience">
             <div class="benefits__stats">
-              <p>5+</p>
+              <div class="benefits__number">
+                <p>5+</p>
+              </div>
               <p>лет</p>
             </div>
             <div class="benefits__stats-info">
@@ -360,110 +375,124 @@
 
     <section class="discount container">
       <h2>Акции</h2>
-      <article class="discount__membership membership-unlimited">
-        <div class="membership-unlimited__wrap">
-          <p>Год</p>
-          <p>4999</p>
-          <h2>Безлимитный абонемент в тренажерный зал</h2>
-          <a href="#">подробнее</a>
+      <div class="discount__box">
+        <article class="discount__membership membership-unlimited">
+          <div class="membership-unlimited__background-wrap">
+            <div class="membership-unlimited__wrap">
+              <p>Год</p>
+              <p>4999</p>
+              <h2>Безлимитный абонемент в тренажерный зал</h2>
+              <a href="#">подробнее</a>
+            </div>
+          </div>
+          <div class="membership-unlimited__background"></div>
+        </article>
+        <div class="discount__wrap">
+          <article class="discount__card discount__card--friend membership-discount">
+            <div class="membership-discount__wrap membership-discount__wrap--indent">
+              <p>Месяц бесплатно</p>
+              <h2>Приведи друга, получи абонемент в подарок</h2>
+              <a href="#">подробнее</a>
+            </div>
+          </article>
+          <article class="discount__card membership-discount">
+            <div class="membership-discount__wrap">
+              <p>Скидка 20%</p>
+              <h2>Корпоративный фитнес с командой</h2>
+              <a href="#">подробнее</a>
+            </div>
+          </article>
         </div>
-        <div class="discount__background"></div>
-      </article>
-      <article>
-        <div>
-          <p>Месяц бесплатно</p>
-          <h2>Приведи друга, получи абонемент в подарок</h2>
-          <a href="#">подробнее</a>
-        </div>
-      </article>
-      <article>
-        <div>
-          <p>Скидка 20%</p>
-          <h2>Корпоративный фитнес с командой</h2>
-          <a href="#">подробнее</a>
-        </div>
-      </article>
+      </div>
+    </section>
+
+    <section class="review review-slider container">
+      <h2>Отзывы</h2>
+      <div class="review-slider__box">
+        <ul class="review-slider__list">
+          <li class="review-slider__item">
+            <div class="review-slider__photo">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/review-desk-tab.webp 1x, img/review-desk-tab@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/review-desk-tab.webp 1x, img/review-desk-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/review-mob.webp 1x, img/review-mob@2x.webp 2x">
+
+                <source media="(min-width: 1366px)"
+                  srcset="img/img/review-desk-tab.png 1x, img/review-desk-tab@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/review-desk-tab.png 1x, img/review-desk-tab@2x.png 2x">
+                <img src="img/review-mob.png" srcset="img/review-mob@2x.png 2x" alt="Фото автора отзыва">
+              </picture>
+            </div>
+            <div class="review-slider__info">
+              <cite class="review-sliders__user-name">Анна Орлова</cite>
+              <blockquote class="review-sliders__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
+                чисто,
+                тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrap container">
-      <nav class="main-footer__nav main-nav">
-        <a class="lili">
+      <div class="main-nav__wrap">
+        <a>
           <svg class="logo" viewbox="0 0 89 20">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-        <ul class="main-nav__list">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li>
+              <a href="">Услуги</a>
+            </li>
+            <li>
+              <a href="">Абонементы</a>
+            </li>
+            <li>
+              <a href="">Акции</a>
+            </li>
+            <li>
+              <a href="">Тренеры</a>
+            </li>
+            <li>
+              <a href="">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-footer__social-wrap">
+        <ul class="main-footer__social-list">
           <li>
-            <a href="">Услуги</a>
-          </li>
-          <li>
-            <a href="">Абонементы</a>
-          </li>
-          <li>
-            <a href="">Акции</a>
-          </li>
-          <li>
-            <a href="">Тренеры</a>
-          </li>
-          <li>
-            <a href="">Расписание</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- TODO: ПЕРЕДЕЛАТЬ ПОДВАЛ -->
-      <!-- <nav class="main-footer__nav main-nav">
-        <ul class="main-nav__list">
-          <li>
-            <a>
-              <svg class="logo" viewbox="0 0 89 20">
-                <use xlink:href="img/sprite.svg#icon-logo"></use>
+            <a href="#" class="main-footer__social-link main-footer__social-link--vk"
+              aria-label="Переход на вконтакте Supergym">
+              <svg viewbox="0 0 32 17">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="">Услуги</a>
+            <a href="#" class="main-footer__social-link main-footer__social-link--insta"
+              aria-label="Переход на инстаграмм Supergym">
+              <svg viewbox="0 0 27 27">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <a href="">Абонементы</a>
-          </li>
-          <li>
-            <a href="">Акции</a>
-          </li>
-          <li>
-            <a href="">Тренеры</a>
-          </li>
-          <li>
-            <a href="">Расписание</a>
+            <a href="#" class="main-footer__social-link main-footer__social-link--fb"
+              aria-label="Переход на фейсбук Supergym">
+              <svg viewbox="0 0 14 27">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav> -->
-      <ul class="main-footer__social-list">
-        <li>
-          <a href="#" class="main-footer__social-link main-footer__social-link--vk"
-            aria-label="Переход на вконтакте Supergym">
-            <svg viewbox="0 0 32 17">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="main-footer__social-link main-footer__social-link--insta"
-            aria-label="Переход на инстаграмм Supergym">
-            <svg viewbox="0 0 27 27">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="main-footer__social-link main-footer__social-link--fb"
-            aria-label="Переход на фейсбук Supergym">
-            <svg viewbox="0 0 14 27">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
   </footer>
 </body>

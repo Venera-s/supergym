@@ -1,10 +1,11 @@
 .membership-unlimited {
-  width: 280px;
-}
+  display: flex;
+  align-items: flex-start;
 
-.membership-unlimited__wrap {
-  padding: 45px;
-  background-color: $rose-red;
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .membership-unlimited__wrap p {
@@ -13,24 +14,26 @@
   &:first-of-type {
     font-weight: 700;
     font-size: 28px;
-    line-height: 44px;
+    line-height: 33px;
   }
 
   &:last-of-type {
+    padding-bottom: 19px;
     font-weight: 700;
     font-size: 70px;
-    line-height: 109px;
+    line-height: 70px;
   }
 }
 
 .membership-unlimited__wrap h2 {
   @include reset-indents;
+  padding-bottom: 187px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
 
   @media (max-width: $mobile-width-max) {
-    text-align: center;
+    padding-bottom: 40px;
   }
 }
 
@@ -40,6 +43,74 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  text-decoration: underline;
+  border-bottom: 1px solid $white;
   color: $white;
+}
+
+
+.membership-unlimited__background {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 462px;
+    background: url("../../img/stock-tab.jpg") 40% 0 no-repeat;
+    background-size: cover;
+    background-color: #416adb;
+
+    @media (max-width: $tablet-width-max) {
+      width: 100%;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      height: 299px;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 60%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+    height: 299px;
+  }
+}
+
+.membership-unlimited__background-wrap {
+  background-color: $rose-red;
+
+  // @media (max-width: $desktop-width) {
+  //   width: 50%;
+  // }
+
+  // @media (max-width: $desktop-width) {
+  //   width: 50%;
+  // }
+  @media (max-width: $tablet-width-max) {
+    width: 41%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+  }
+}
+
+.membership-unlimited__wrap {
+  width: 280px;
+  padding: 39px 45px 43px;
+
+
+  @media (max-width: $tablet-width-max) {
+    width: 279px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+    text-align: center;
+  }
 }

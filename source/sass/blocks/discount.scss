@@ -1,5 +1,18 @@
-.discount h2 {
+.discount {
+  margin-bottom: 200px;//TODO:временно
+}
+
+.discount__box {
+  display: flex;
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+  }
+}
+
+.discount > h2 {
   @include reset-indents;
+  padding-bottom: 52px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
@@ -9,6 +22,7 @@
   color: $twilight-blue;
 
   @media (max-width: $tablet-width-max) {
+    padding-bottom: 41px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -21,5 +35,49 @@
 
 .discount__membership {
   width: 50%;
-  padding-right: 40px;
+  margin-right: 40px;
+
+  @media (max-width: $desktop-width-max-2) {
+    margin-right: 130px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.discount__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
+}
+
+.discount__card:not(:last-child) {
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 30px;
+  }
+}
+
+.discount__card--friend {
+  @media (max-width: $tablet-width-max) {
+    margin-right: 30px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-right: 0;
+  }
 }

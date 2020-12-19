@@ -1,0 +1,64 @@
+.review-slider h2 {
+  @include reset-indents;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $twilight-blue;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.review-slider__list {
+  @include reset-list;
+}
+
+.review-slider__item {
+  display: flex;
+  width: 560px;
+  margin: 0 auto;
+  padding: 62px;
+  background-color: $twilight-light-blue;
+
+  @media (max-width: $tablet-width-max) {
+    width: 566px;
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 226px;
+    padding: 40px 25px;
+  }
+}
+
+.review-slider__info cite {
+  display: inline-flex;
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+
+  @media (max-width: $mobile-width-max) {
+    line-height: 26px;
+  }
+}
+
+.review-slider__info blockquote {
+  @include reset-indents;
+
+  @media (max-width: $mobile-width-max) {
+    text-align: center;
+  }
+}

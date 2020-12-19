@@ -1,17 +1,6 @@
-.main-nav {
+.main-nav__wrap {
   display: flex;
-  justify-content: space-between;
-}
-
-.main-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: flex-start;
-  width: 970px;
-
-  @media (max-width: $tablet-width-max) {
-    width: 400px;
-  }
+  width: 80%;
 
   @media (max-width: $mobile-width-max) {
     display: inline;
@@ -22,6 +11,53 @@
     padding-bottom: 25px;
   }
 }
+
+.main-nav__wrap > a {
+  width: 30%;
+
+  @media (max-width: $mobile-width-max) {
+    display: block;
+    width: auto;
+    padding-bottom: 17px;
+  }
+}
+
+.main-nav {
+  display: flex;
+  width: 90%;
+
+  @media (max-width: $mobile-width-max) {
+  width: auto;
+  }
+}
+
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  // justify-content: flex-start;
+  // width: 100%;
+
+  @media (max-width: $tablet-width-max) {
+    // width: 400px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    display: inline;
+    // column-count: 2;
+    // column-width: 100px;
+    // column-gap: 2em;
+    // width: 100%;
+    // padding-bottom: 25px;
+  }
+}
+
+.main-nav__list {
+  @include reset-list;
+}
+
 
 .main-nav__list li {
   padding-bottom: 10px;
@@ -39,9 +75,6 @@
   }
 }
 
-.main-nav__list li:first-child {
-  padding-right: 276px;
-}
 
 .main-nav__list a {
   font-size: 14px;

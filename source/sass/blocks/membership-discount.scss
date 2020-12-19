@@ -1,0 +1,56 @@
+.membership-discount {
+  padding: 7px;
+  background-image: $gradient-border;
+
+  @media (max-width: $tablet-width-max) {
+    width: 324px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: auto;
+  }
+}
+
+.membership-discount__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 18px 28px 27px;
+  color: $twilight-light-blue;
+  background-color: $white;
+}
+
+.membership-discount__wrap p {
+  @include reset-indents;
+  padding-bottom: 3px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.membership-discount__wrap h2 {
+  @include reset-indents;
+  height: 100%;
+  margin-bottom: auto;
+  padding-bottom: 67px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.membership-discount__wrap a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $twilight-light-blue;
+  border-bottom: 1px solid $twilight-light-blue;
+}
+
+.membership-discount__wrap--indent h2 {
+  @media (max-width: $tablet-width-max) {
+    padding-right: 27px;
+  }
+}

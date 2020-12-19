@@ -13,9 +13,9 @@
 // }
 
 
-// @media (min-width: $desktop-width) {
-//   body {
-//     background: url("../img/Desktop.jpg") no-repeat 50% 0;
-//     opacity: 0.3;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  body {
+    background: url("../img/Desktop.jpg") no-repeat 50% 0;
+    opacity: 0.3;
+  }
+}
