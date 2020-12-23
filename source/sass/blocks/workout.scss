@@ -1,0 +1,131 @@
+.workout {
+  background-color: $twilight-blue;
+  width: 50%;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+  }
+}
+
+.workout__form {
+  width: 683px;
+  margin-left: auto;
+  padding: 61px 170px 70px 103px;
+
+  @media (max-width: $desktop-width) {
+    width: 600px;
+    padding-right: 86px;
+    padding-bottom: 90px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    padding: 70px 161px 68px 133px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 70px 15px 68px;
+  }
+}
+
+.workout__form h2 {
+  @include reset-indents;
+  padding-bottom: 28px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 34px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.workout__form p {
+  @include reset-indents;
+}
+
+.workput__input-box {
+  display: flex;
+  margin-bottom: 29px;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 40px;
+  }
+}
+
+.workout__input-wrap {
+  margin-right: 30px;
+
+  &:first-child {
+    margin-right: 30px;
+
+    @media (max-width: $tablet-width-max) {
+      margin-right: 59px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      margin-right: 0;
+      margin-bottom: 34px;
+    }
+  }
+}
+
+.workout__input-wrap input {
+  width: 190px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: $white;
+  background-color: $twilight-blue;
+  border: none;
+  border-bottom: 1px solid #74819c;
+
+  @media (max-width: $tablet-width-max) {
+    width: 206px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
+}
+
+.workout__form button {
+  display: block;
+  width: 410px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $twilight-blue;
+  border: 3px solid $white;
+
+  @media (max-width: $tablet-width-max) {
+    width: 472px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,9 @@
+.workout-contacts {
+  display: flex;
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+  }
+}
+
+

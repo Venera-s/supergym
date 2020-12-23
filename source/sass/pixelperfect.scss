@@ -5,12 +5,12 @@
 // }
 
 
-// @media (min-width: $tablet-width) {
-//   body {
-//     background: url("../img/Tablet.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  body {
+    background: url("../img/Tablet.jpg") no-repeat 50% -576px;
+    opacity: 0.2;
+  }
+}
 
 
 @media (min-width: $desktop-width) {

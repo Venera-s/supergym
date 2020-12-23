@@ -1,0 +1,142 @@
+.contacts {
+  width: 50%;
+  padding: 67px 103px 63px 121px;
+  color: $twilight-blue;
+  border-top: 1px solid #74819c;
+
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    padding-top: 69px;
+    padding-bottom: 61px;
+    padding-left: 133px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 69px 15px 43px;
+  }
+}
+
+.contacts h2 {
+  @include reset-indents;
+  padding-bottom: 41px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 32px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 34px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.contacts p {
+  @include reset-indents;
+}
+
+.contacts__box {
+  display: flex;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
+}
+
+
+.contacts__info {
+  &:nth-child(odd) {
+    padding-bottom: 22px;
+
+    @media (max-width: $tablet-width-max) {
+      padding-bottom: 19px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.contacts__wrap .contacts__info {
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 19px;
+  }
+}
+
+.contacts__info p {
+  &:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width: $tablet-width-max) {
+      padding-bottom: 6px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $tablet-width-max) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
+
+.contacts__info a {
+  @media (max-width: $tablet-width-max) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.contacts__wrap--one {
+  padding-right: 65px;
+  border-right: 1px solid #74819c;
+
+  @media (max-width: $desktop-width-max-2) {
+    padding-right: 30px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-right: 49px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.contacts__wrap--two {
+  padding-left: 58px;
+
+  @media (max-width: $desktop-width-max-2) {
+    padding-left: 45px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: 47px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 0;
+  }
+}

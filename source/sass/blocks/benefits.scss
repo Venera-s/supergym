@@ -1,12 +1,13 @@
 .benefits {
-  padding-right: 61px;
-  padding-left: 61px;
+  // height: 664px;
+  // padding-right: 57px;
+  // padding-left: 99px;
   background-color: $grey-blue;
-  margin-bottom: 443px; //TODO:временно
 }
 
 .benefits h2 {
   @include reset-indents;
+  padding-bottom: 43px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
@@ -16,6 +17,7 @@
   color: $twilight-blue;
 
   @media (max-width: $tablet-width-max) {
+    padding-bottom: 27px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -28,36 +30,56 @@
 
 .benefits__list {
   @include reset-list;
-  position: relative;
+  // position: relative;
   display: flex;
-  // flex-direction: column;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  // height: 392px;
+  height: 363px;
+  padding-right: 66px;
+  padding-left: 92px;
+  // padding-left: 86px;
+  @media (max-width: $tablet-width-max) {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    height: 576px;
+    padding: 0;
+  }
 }
 
-// .benefits__item--area {
-//   order: 1;
-// }
+.benefits__item--area {
+  order: 1;
+  padding-bottom: 55px;
+}
 
-// .benefits__item--parking {
-//   order: 4;
-// }
+.benefits__item--parking {
+  order: 4;
+  padding-bottom: 55px;
 
-// .benefits__item--comfort {
-//   order: 2;
-// }
+  @media (max-width: $tablet-width-max) {
+    order: 2;
+  }
+}
 
-// .benefits__item--experience {
-//   order: 5;
-// }
+.benefits__item--comfort {
+  order: 2;
+
+  @media (max-width: $tablet-width-max) {
+    order: 4;
+  }
+}
+
+.benefits__item--experience {
+  order: 5;
+}
 
 .benefits__item {
   display: flex;
-  width: 347px;
-  padding-top: 42px;
-  padding-bottom: 65px;
+  width: 337px;
+  // padding-top: 42px;
+  // padding-bottom: 65px;
   // align-items: center;
 
   // &:nth-child(odd) {
@@ -67,11 +89,21 @@
   // &:nth-child(even) {
   //   padding-left: 60px;
   // }
+
+  @media (max-width: $tablet-width-max) {
+    align-items: center;
+    width: 50%;
+    padding: 0;
+
+    &:not(:nth-child(2n)) {
+      padding-right: 15px;
+    }
+  }
 }
 
 
 .benefits__stats {
-  padding-right: 43px;
+  padding-right: 32px;
 }
 
 .benefits__number > p {
@@ -82,6 +114,11 @@
   background: linear-gradient(to right bottom, #d10a42, #0041ca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 58px;
+    line-height: 51px;
+  }
 }
 
 .benefits__stats > p {
@@ -91,6 +128,10 @@
 
 .benefits__stats-info {
   padding-top: 21px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 0;
+  }
 }
 
 .benefits__stats-info p {
@@ -98,9 +139,16 @@
   color: $twilight-blue;
 
   &:first-child {
+    padding-bottom: 5px;
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
+
+    @media (max-width: $tablet-width-max) {
+      padding-bottom: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &:last-child {
@@ -123,13 +171,22 @@
 }
 
 .benefits__item--middle {
-  position: absolute;
-  top: 15%;
-  left: 38%;
+  // position: absolute;
+  // top: 15%;
+  // left: 36%;
   flex-direction: column;
+  order: 3;
   width: 240px;
+  margin-top: 27px;
   padding: 50px 29px 58px;
   background-color: $twilight-light-blue;
+
+  @media (max-width: $tablet-width-max) {
+    width: 68%;
+    order: 3;
+    margin-top: 9px;
+    padding: 45px 29px;
+  }
 }
 
 .benefits__item--middle p {
@@ -140,11 +197,19 @@
     font-weight: 700;
     font-size: 74px;
     line-height: 82px;
+
+    @media (max-width: $tablet-width-max) {
+      line-height: 111px;
+    }
   }
 
   &:last-child {
     font-size: 16px;
     line-height: 24px;
+
+    @media (max-width: $tablet-width-max) {
+      max-width: 172px;
+    }
   }
 }
 
@@ -153,4 +218,17 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 39px;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+.benefits__item--border {
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+  @media (max-width: $tablet-width-max) {
+    border-bottom: none;
+  }
 }
