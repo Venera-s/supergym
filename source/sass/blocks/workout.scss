@@ -10,7 +10,7 @@
 .workout__form {
   width: 683px;
   margin-left: auto;
-  padding: 61px 170px 70px 103px;
+  padding: 63px 170px 70px 103px;
 
   @media (max-width: $desktop-width) {
     width: 600px;
@@ -37,7 +37,7 @@
 
 .workout__form h2 {
   @include reset-indents;
-  padding-bottom: 28px;
+  padding-bottom: 33px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;

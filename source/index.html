@@ -20,21 +20,24 @@
     <div class="container">
       <div class="main-header__logo-wrap">
         <a>
-          <svg class="logo" viewbox="0 0 89 20">
+          <svg class="logo" width="87" heigh="20">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
         <a class="main-header__tel" href="tel:+78005555555">8-800-555-55-55</a>
       </div>
       <div class="main-header__intro-wrap">
-        <p>ОМСК</p>
-        <h1>Фитнес центр</h1>
-        <ul class="main-header__list">
-          <li>Тренажёрный зал</li>
-          <li>Групповые занятия</li>
-          <li>Кардио-зона</li>
-        </ul>
-        <button class="buy-btn" type="button">Купить абонемент</button>
+        <div class="main-header__intro">
+          <p>ОМСК</p>
+          <h1>Фитнес центр</h1>
+          <ul class="main-header__list">
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
+          <a class="main-header__link buy-btn" href="#membership">Купить абонемент</a>
+        </div>
+        <div class="main-header__photo"></div>
       </div>
       <ul class="main-header__social-list">
         <li><a href="#" aria-label="Переход на фейсбук Supergym">FB</a></li>
@@ -55,28 +58,39 @@
       </div>
       <div class="gym__photo">
         <picture>
+          <!-- 1х: 660px; 2x: 1320px -->
           <source type="image/webp" media="(min-width: 1366px)" srcset="img/gym-desk.webp 1x, img/gym-desk@2x.webp 2x">
+          <!-- 1х: 678px; 2x: 1356px -->
           <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tab.webp 1x, img/gym-tab@2x.webp 2x">
           <source type="image/webp" srcset="img/gym-mob.webp 1x, img/gym-mob@2x.webp 2x">
 
+          <!-- 1х: 660px; 2x: 1320px -->
           <source media="(min-width: 1366px)" srcset="img/gym-desk.jpg 1x, img/gym-desk@2x.jpg 2x">
+          <!-- 1х: 678px; 2x: 1356px -->
           <source media="(min-width: 768px)" srcset="img/gym-tab.jpg 1x, img/gym-tab@2x.jpg 2x">
+          <!-- 1х: 320px; 2x: 640px -->
           <img src="img/gym-mob.jpg" srcset="img/gym-mob@2x.jpg 2x" alt="Тренажерный зал Supergym">
         </picture>
         <picture>
+          <!-- 1х: 364px; 2x: 728px -->
           <source type="image/webp" media="(min-width: 1366px)"
             srcset="img/video-desk.webp 1x, img/video-desk@2x.webp 2x">
+          <!-- 1х: 266px; 2x: 532px -->
           <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tab.webp 1x, img/video-tab@2x.webp 2x">
+          <!-- 1х: 320px; 2x: 728px -->
           <source type="image/webp" srcset="img/video-mob.webp 1x, img/video-mob@2x.webp 2x">
 
+          <!-- 1х: 364px; 2x: 728px -->
           <source media="(min-width: 1366px)" srcset="img/video-desk.jpg 1x, img/video-desk@2x.jpg 2x">
+          <!-- 1х: 266px; 2x: 532px -->
           <source media="(min-width: 768px)" srcset="img/video-tab.jpg 1x, img/video-tab@2x.jpg 2x">
+          <!-- 1х: 320px; 2x: 728px -->
           <img src="img/video-mob.jpg" srcset="img/video-mob@2x.jpg 2x" alt="Видео тренажерного зала Supergym">
         </picture>
         <button type="button" aria-label="Смотреть видеo тренажерного зала Supergym"></button>
       </div>
     </section>
-    <section class="membership">
+    <section class="membership" id="membership">
       <div class="membership__wrap container">
         <h2>Абонементы</h2>
         <div class="membership__months-wrap">
@@ -119,7 +133,6 @@
         </ul>
       </div>
     </section>
-
     <section class="promo container">
       <div class="promo__wrap">
         <div class="promo__desc">
@@ -153,54 +166,27 @@
       <div class="promo__background"></div>
     </section>
 
-
-    <!-- TODO:copy of promo -->
-    <!-- <section class="promo">
-      <div class="promo__wrap ">
-        <div class="promo__desc">
-          <div class="promo__facts">
-            <p>Super games</p>
-            <div class="promo__daytime">
-              <div class="promo__data-wrap">
-                <div class="promo__data">
-                  <p>Дата</p>
-                </div>
-                <div class="promo__number-wrap">
-                  <div class="promo__number">
-                    <p>7</p>
-                  </div>
-                  <div class="promo__months">
-                    <p>Марта</p>
-                    <p>2019</p>
-                  </div>
-                </div>
-              </div>
-              <div class="promo__time">
-                <p>Время</p>
-                <p>12:00</p>
-              </div>
-            </div>
-          </div>
-          <h2>Ежегодные соревнования по CrossFit</h2>
-          <a class="promo__btn" href="#">заполнить заявку</a>
-        </div>
-      </div>
-    </section> -->
-    <!-- <section class="coach container">
+    <section class="coach container">
       <h2>Тренеры</h2>
       <ul class="coach__list">
         <li>
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
+                <!-- 1х: 260px; 2x:520 px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/anna-desk.webp 1x, img/anna-desk@2x.webp 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/anna-tab.webp 1x, img/anna-tab@2x.webp 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/anna-mob.webp 1x, img/anna-mob@2x.webp 2x">
 
+                <!-- 1х: 260px; 2x:520 px -->
                 <source media="(min-width: 1366px)" srcset="img/anna-desk.jpg 1x, img/anna-desk@2x.jpg 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/anna-tab.jpg, img/anna-tab@2x.jpg 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <img src="img/anna-mob.jpg" srcset="img/anna-mob@2x.jpg" alt="Тренер Анна Павлова">
               </picture>
               <h3 class="coach__name">Анна Павлова</h3>
@@ -220,14 +206,20 @@
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
+                <!-- 1х: 260px; 2x:520 px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/leha-desk.webp 1x, img/leha-desk@2x.webp 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/leha-tab.webp 1x, img/leha-tab@2x.webp 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/leha-mob.webp 1x, img/leha-mob@2x.webp 2x">
 
+                <!-- 1х: 260px; 2x:520 px -->
                 <source media="(min-width: 1366px)" srcset="img/leha-desk.jpg 1x, img/leha-desk@2x.jpg 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/leha-tab.jpg, img/leha-tab@2x.jpg 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <img src="img/leha-mob.jpg" srcset="img/leha-mob@2x.jpg " alt="Тренер Алексей Лавров">
               </picture>
               <h3 class="coach__name">Алексей Лавров</h3>
@@ -247,14 +239,20 @@
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
+                <!-- 1х: 260px; 2x:520 px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/alex-desk.webp 1x, img/alex-desk@2x.webp 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/alex-tab.webp 1x, img/alex-tab@2x.webp 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/alex-mob.webp 1x, img/alex-mob@2x.webp 2x">
 
+                <!-- 1х: 260px; 2x:520 px -->
                 <source media="(min-width: 1366px)" srcset="img/alex-desk.jpg 1x, img/alex-desk@2x.jpg 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/alex-tab.jpg, img/alex-tab@2x.jpg 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <img src="img/alex-mob.jpg" srcset="img/alex-mob@2x.jpg" alt="Тренер Александр Пашков">
               </picture>
               <h3 class="coach__name">Александр Пашков</h3>
@@ -274,14 +272,20 @@
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
+                <!-- 1х: 260px; 2x:520 px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/mary-desk.webp 1x, img/mary-desk@2x.webp 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/mary-tab.webp 1x, img/mary-tab@2x.webp 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/mary-mob.webp 1x, img/mary-mob@2x.webp 2x">
 
+                <!-- 1х: 260px; 2x:520 px -->
                 <source media="(min-width: 1366px)" srcset="img/mary-desk.jpg 1x, img/mary-desk@2x.jpg 2x">
+                <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/mary-tab.jpg, img/mary-tab@2x.jpg 2x">
+                <!-- 1х: 226px; 2x: 688px -->
                 <img src="img/mary-mob.jpg" srcset="img/mary-mob@2x.jpg" alt="Тренер Мария Кетова">
               </picture>
               <h3 class="coach__name">Мария Кетова</h3>
@@ -298,11 +302,10 @@
           </div>
         </li>
       </ul>
-    </section> -->
+    </section>
 
-    <!-- TODO: нужно сделать секцию -->
     <section class="benefits">
-      <div class="container">
+      <div class="benefits__container container">
         <h2>Наши преимущества</h2>
         <ul class="benefits__list">
           <li class="benefits__item benefits__item--border benefits__item--area">
@@ -334,16 +337,6 @@
             <p>Тренажеров</p>
             <p>Современные тренажеры на все группы мышц</p>
           </li>
-
-          <!-- <li class="benefits__item benefits__item--middle">
-            <div class="benefits__stats benefits__stats--color">
-              <p>100</p>
-              <p>Тренажеров</p>
-            </div>
-            <div class="benefits__stats-info benefits__stats-info--color">
-              <p>Современные тренажеры на все группы мышц</p>
-            </div>
-          </li> -->
           <li class="benefits__item benefits__item--comfort">
             <div class="benefits__stats">
               <div class="benefits__number">
@@ -413,15 +406,21 @@
           <li class="review-slider__item">
             <div class="review-slider__photo">
               <picture>
+                <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/review-desk-tab.webp 1x, img/review-desk-tab@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/review-desk-tab.webp 1x, img/review-desk-tab@2x.webp 2x">
+                  <!-- 1х: 68px; 2x: 136px -->
                 <source type="image/webp" srcset="img/review-mob.webp 1x, img/review-mob@2x.webp 2x">
 
+                  <!-- 1х: 80px; 2x: 160px -->
                 <source media="(min-width: 1366px)"
                   srcset="img/img/review-desk-tab.png 1x, img/review-desk-tab@2x.png 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
                 <source media="(min-width: 768px)" srcset="img/review-desk-tab.png 1x, img/review-desk-tab@2x.png 2x">
+                  <!-- 1х: 68px; 2x: 136px -->
                 <img src="img/review-mob.png" srcset="img/review-mob@2x.png 2x" alt="Фото автора отзыва">
               </picture>
             </div>
@@ -484,7 +483,7 @@
     <div class="main-footer__wrap container">
       <div class="main-nav__wrap">
         <a>
-          <svg class="logo" viewbox="0 0 89 20">
+          <svg class="logo" width="87" heigh="20">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
@@ -513,7 +512,7 @@
           <li>
             <a href="#" class="main-footer__social-link main-footer__social-link--vk"
               aria-label="Переход на вконтакте Supergym">
-              <svg viewbox="0 0 32 17">
+              <svg width="32" height="17">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
@@ -521,7 +520,7 @@
           <li>
             <a href="#" class="main-footer__social-link main-footer__social-link--insta"
               aria-label="Переход на инстаграмм Supergym">
-              <svg viewbox="0 0 27 27">
+              <svg widht="27" height="27">
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
@@ -529,7 +528,7 @@
           <li>
             <a href="#" class="main-footer__social-link main-footer__social-link--fb"
               aria-label="Переход на фейсбук Supergym">
-              <svg viewbox="0 0 14 27">
+              <svg width="14" height="27">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>

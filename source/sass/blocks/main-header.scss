@@ -1,21 +1,14 @@
 .main-header {
-  // padding-bottom: 5201px; //для пп
   padding-bottom: 78px;
-  background: // url("../img/header-back-desk.jpg") 65% 50% no-repeat,
-    linear-gradient(to right top, #003d85, #b80027);
-
-  @media (max-width: $desktop-width) {
-    // background-position: 70% 50%;
-  }
+  background: linear-gradient(to right top, #003d85, #b80027);
 
   @media (max-width: $tablet-width-max) {
-    padding-bottom: 111px;
-    background: // url("../img/header-back-desk.jpg") 90% 50%/324px 390px no-repeat,
-      linear-gradient(to right top, #003d85, #b80027);
+    padding-bottom: 104px;
+    background: linear-gradient(to right top, #003d85, #b80027);
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-bottom: 85px;
+    padding-bottom: 79px;
     background: linear-gradient(to right top, #003d85, #b80027);
   }
 }
@@ -55,47 +48,21 @@
   }
 }
 
-.main-header__intro-wrap {
-  position: relative;
-  max-width: 395px;
-  padding-top: 112px;
+.main-header__intro {
+  display: flex;
+  flex-direction: column;
+  width: 395px;
+  padding-top: 111px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: 460px;
-    width: 550px;
-    height: 556px;
-    background: url("../img/header-back-desk.jpg") no-repeat;
-  }
-
-  @media (max-width: $desktop-width-max-2) {
-    top: 7px;
-  }
 
   @media (max-width: $tablet-width-max) {
-    max-width: 325px;
+    width: 324px;
     padding-top: 72px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 11px;
-      left: 354px;
-      width: 324px;
-      height: 390px;
-      background: url("../img/header-back-tab.jpg") no-repeat;
-    }
   }
 
   @media (max-width: $mobile-width-max) {
+    width: 290px;
     margin: 0 auto;
-    padding-top: 70px;
-
-    &::after {
-      display: none;
-    }
   }
 }
 
@@ -129,8 +96,8 @@
   font-size: 109px;
   line-height: 109px;
   text-align: right;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-shadow: white 2px 0, white 2px 2px, white 0 2px, white -2px 2px, white -2px 0, white -2px -2px, white 0 -2px, white 2px -2px;
 
   @media (max-width: $tablet-width-max) {
     font-size: 86px;
@@ -143,7 +110,7 @@
   }
 }
 
-.main-header__intro-wrap ul:first-of-type {
+.main-header__intro ul:first-of-type {
   @include reset-list;
   max-width: 132px;
   margin-top: -91px;
@@ -151,14 +118,14 @@
   text-align: right;
 
   @media (max-width: $tablet-width-max) {
-    max-width: 115px;
-    margin-top: -87px;
+    max-width: 113px;
+    margin-top: -80px;
     padding-bottom: 57px;
   }
 
   @media (max-width: $mobile-width-max) {
     max-width: 113px;
-    margin-top: -78px;
+    margin-top: -74px;
     padding-bottom: 54px;
   }
 }
@@ -178,14 +145,19 @@
   color: $white;
 }
 
-.main-header__intro-wrap button {
+
+
+.main-header__link {
+  width: 230px;
   margin-left: auto;
-  padding: 20px 54px;
+  padding: 20px 10px;
+  text-align: center;
   color: $white;
   border: 4px solid $white;
 
 
   @media (max-width: $tablet-width-max) {
+    width: 183px;
     padding: 20px;
   }
 
@@ -197,11 +169,42 @@
 .main-header__social-list {
   @include reset-list;
   width: 50px;
-  margin-top: -83px;
+  margin-top: -81px;
   margin-left: auto;
   text-align: right;
 
   @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+
+.main-header__intro-wrap {
+  position: relative;
+}
+
+.main-header__photo {
+  content: "";
+  position: absolute;
+  top: -1%;
+  left: 40%;
+  width: 500px;
+  height: 556px;
+  background: url("../img/header-back-desk.jpg") no-repeat;
+  background-color: #000145;
+
+  @media (max-width: $desktop-width-max-2) {
+    top: 5%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    left: 52%;
+    width: 324px;
+    height: 390px;
+    background-size: cover;
+  }
+
+  @media (max-width: $mobile-width-max) {
     display: none;
   }
 }

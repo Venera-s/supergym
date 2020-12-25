@@ -27,7 +27,7 @@
   width: 90%;
 
   @media (max-width: $mobile-width-max) {
-  width: auto;
+    width: auto;
   }
 }
 
@@ -37,20 +37,11 @@
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
-  // justify-content: flex-start;
-  // width: 100%;
-
-  @media (max-width: $tablet-width-max) {
-    // width: 400px;
-  }
 
   @media (max-width: $mobile-width-max) {
     display: inline;
-    // column-count: 2;
-    // column-width: 100px;
-    // column-gap: 2em;
-    // width: 100%;
-    // padding-bottom: 25px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

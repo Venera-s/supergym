@@ -58,7 +58,7 @@
     left: 0;
     width: 280px;
     height: 462px;
-    background: url("../../img/stock-tab.jpg") 40% 0 no-repeat;
+    background: url("../img/stock-tab.jpg") 40% 0 no-repeat;
     background-size: cover;
     background-color: #416adb;
 
@@ -84,13 +84,6 @@
 .membership-unlimited__background-wrap {
   background-color: $rose-red;
 
-  // @media (max-width: $desktop-width) {
-  //   width: 50%;
-  // }
-
-  // @media (max-width: $desktop-width) {
-  //   width: 50%;
-  // }
   @media (max-width: $tablet-width-max) {
     width: 41%;
   }

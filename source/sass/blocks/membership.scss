@@ -24,31 +24,6 @@
   flex-direction: column;
   align-items: center;
   z-index: 1;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: -39%;
-  //   right: -13%;
-  //   z-index: -1;
-  //   width: 470px;
-  //   height: 494px;
-  //   background: url("../../img/disk-desk.png")  no-repeat;
-  //   background-size: contain;
-  //   // TODO: 100% 100%/contain
-
-  //   @media (max-width: $tablet-width-max) {
-  //     bottom: -11%;
-  //     right: -10%;
-  //     width: 423px;
-  //     height: 444px;
-  //     background-size: contain;
-  //   }
-
-  //   @media (max-width: $mobile-width-max) {
-  //     display: none;
-  //   }
-  // }
 }
 
 .membership h2 {
@@ -295,8 +270,4 @@
     background-origin: border-box;
     border-color: transparent;
   }
-
-  // @media (max-width: $mobile-width-max) {
-  //   padding: 24px 43px;
-  // }
 }

@@ -1,5 +1,5 @@
 .coach {
-  margin-bottom: 624px; //TODO: временно
+  padding-bottom: 104px;
 }
 
 .coach h2 {
@@ -42,7 +42,7 @@
 
   &::before {
     left: -57px;
-    background: url("../../img/arrow-left.svg") no-repeat;
+    background: url("../img/arrow-left.svg") no-repeat;
     background-size: cover;
 
     @media (max-width: $tablet-width-max) {
@@ -52,7 +52,7 @@
 
   &::after {
     right: -57px;
-    background: url("../../img/arrow-right.svg") no-repeat;
+    background: url("../img/arrow-right.svg") no-repeat;
     background-size: contain;
 
     @media (max-width: $tablet-width-max) {
@@ -116,6 +116,14 @@
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.coach__name {
+  @include reset-indents;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
 }
 
 .coach__card-info {
