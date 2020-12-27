@@ -18,9 +18,9 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="main-header__logo-wrap">
+      <div class="main-header__logo">
         <a>
-          <svg class="logo" width="87" heigh="20">
+          <svg class="logo" width="87" height="20">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
@@ -111,7 +111,7 @@
               <p>С тренером</p>
               <p>12 занятий</p>
               <p class="membership__rate-price membership__rate-price--5000">5000 ₽</p>
-              <a href="" class="membership__rate-btn buy-btn">Купить абонемент</a>
+              <a href="#" class="membership__rate-btn buy-btn">Купить абонемент</a>
             </div>
           </li>
           <li class="membership__rate-item membership__rate-item--border">
@@ -119,7 +119,7 @@
               <p>Дневной</p>
               <p>с 8:00 до 17:00</p>
               <p class="membership__rate-price membership__rate-price--1700">1700 ₽</p>
-              <a href="" class="membership__rate-btn membership__rate-btn--color buy-btn">Купить абонемент</a>
+              <a href="#" class="membership__rate-btn membership__rate-btn--color buy-btn">Купить абонемент</a>
             </div>
           </li>
           <li class="membership__rate-item">
@@ -127,7 +127,7 @@
               <p>Полный день</p>
               <p>с 8:00 до 22:00 </p>
               <p class="membership__rate-price membership__rate-price--2700">2700 ₽</p>
-              <a href="" class="membership__rate-btn buy-btn">Купить абонемент</a>
+              <a href="#" class="membership__rate-btn buy-btn">Купить абонемент</a>
             </div>
           </li>
         </ul>
@@ -168,12 +168,14 @@
 
     <section class="coach container">
       <h2>Тренеры</h2>
+      <button class="coach__btn coach__btn--previous"></button>
+      <button class="coach__btn coach__btn--next"></button>
       <ul class="coach__list">
         <li>
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/anna-desk.webp 1x, img/anna-desk@2x.webp 2x">
                 <!-- 1х: 268px; 2x: 536px -->
@@ -182,7 +184,7 @@
                 <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/anna-mob.webp 1x, img/anna-mob@2x.webp 2x">
 
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source media="(min-width: 1366px)" srcset="img/anna-desk.jpg 1x, img/anna-desk@2x.jpg 2x">
                 <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/anna-tab.jpg, img/anna-tab@2x.jpg 2x">
@@ -206,7 +208,7 @@
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/leha-desk.webp 1x, img/leha-desk@2x.webp 2x">
                 <!-- 1х: 268px; 2x: 536px -->
@@ -215,7 +217,7 @@
                 <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/leha-mob.webp 1x, img/leha-mob@2x.webp 2x">
 
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source media="(min-width: 1366px)" srcset="img/leha-desk.jpg 1x, img/leha-desk@2x.jpg 2x">
                 <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/leha-tab.jpg, img/leha-tab@2x.jpg 2x">
@@ -239,7 +241,7 @@
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/alex-desk.webp 1x, img/alex-desk@2x.webp 2x">
                 <!-- 1х: 268px; 2x: 536px -->
@@ -248,7 +250,7 @@
                 <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/alex-mob.webp 1x, img/alex-mob@2x.webp 2x">
 
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source media="(min-width: 1366px)" srcset="img/alex-desk.jpg 1x, img/alex-desk@2x.jpg 2x">
                 <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/alex-tab.jpg, img/alex-tab@2x.jpg 2x">
@@ -272,7 +274,7 @@
           <div class="coach__wrap">
             <div class="coach__img">
               <picture>
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/mary-desk.webp 1x, img/mary-desk@2x.webp 2x">
                 <!-- 1х: 268px; 2x: 536px -->
@@ -281,7 +283,7 @@
                 <!-- 1х: 226px; 2x: 688px -->
                 <source type="image/webp" srcset="img/mary-mob.webp 1x, img/mary-mob@2x.webp 2x">
 
-                <!-- 1х: 260px; 2x:520 px -->
+                <!-- 1х: 260px; 2x: 520px -->
                 <source media="(min-width: 1366px)" srcset="img/mary-desk.jpg 1x, img/mary-desk@2x.jpg 2x">
                 <!-- 1х: 268px; 2x: 536px -->
                 <source media="(min-width: 768px)" srcset="img/mary-tab.jpg, img/mary-tab@2x.jpg 2x">
@@ -365,7 +367,6 @@
         </ul>
       </div>
     </section>
-
     <section class="discount container">
       <h2>Акции</h2>
       <div class="discount__box">
@@ -398,7 +399,6 @@
         </div>
       </div>
     </section>
-
     <section class="review review-slider container">
       <h2>Отзывы</h2>
       <div class="review-slider__box">
@@ -409,18 +409,18 @@
                 <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp" media="(min-width: 1366px)"
                   srcset="img/review-desk-tab.webp 1x, img/review-desk-tab@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
+                <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/review-desk-tab.webp 1x, img/review-desk-tab@2x.webp 2x">
-                  <!-- 1х: 68px; 2x: 136px -->
+                <!-- 1х: 68px; 2x: 136px -->
                 <source type="image/webp" srcset="img/review-mob.webp 1x, img/review-mob@2x.webp 2x">
 
-                  <!-- 1х: 80px; 2x: 160px -->
+                <!-- 1х: 80px; 2x: 160px -->
                 <source media="(min-width: 1366px)"
                   srcset="img/img/review-desk-tab.png 1x, img/review-desk-tab@2x.png 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
+                <!-- 1х: 80px; 2x: 160px -->
                 <source media="(min-width: 768px)" srcset="img/review-desk-tab.png 1x, img/review-desk-tab@2x.png 2x">
-                  <!-- 1х: 68px; 2x: 136px -->
+                <!-- 1х: 68px; 2x: 136px -->
                 <img src="img/review-mob.png" srcset="img/review-mob@2x.png 2x" alt="Фото автора отзыва">
               </picture>
             </div>
@@ -439,13 +439,13 @@
       <article class="workout">
         <form action="https://echo.htmlacademy.ru" method="post" class="workout__form">
           <h2>Бесплатное занятие</h2>
-          <div class="workput__input-box">
+          <div class="workout__input-box">
             <p class="workout__input-wrap">
               <input type="text" name="your-name" id="name-field" placeholder="Имя">
               <label class="visually-hidden" for="name-field">Имя</label>
             </p>
             <p class="workout__input-wrap">
-              <input type="text" name="your-tel" id="tel-field" placeholder="Телефон">
+              <input type="tel" name="your-tel" id="tel-field" placeholder="Телефон" required>
               <label class="visually-hidden" for="tel-field">Телефон</label>
             </p>
           </div>
@@ -468,11 +468,11 @@
           <div class="contacts__wrap contacts__wrap--two">
             <div class="contacts__info">
               <p>Телефон:</p>
-              <a href="">8-800-555-55-55</a>
+              <a href="tel:+78005555555">8-800-555-55-55</a>
             </div>
             <div class="contacts__info">
               <p>Email:</p>
-              <a href="">omsk@supergym.ru</a>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
             </div>
           </div>
         </div>
@@ -481,28 +481,28 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrap container">
-      <div class="main-nav__wrap">
+      <div class="main-nav">
         <a>
-          <svg class="logo" width="87" heigh="20">
+          <svg class="logo" width="87" height="20">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav__wrap">
           <ul class="main-nav__list">
             <li>
-              <a href="">Услуги</a>
+              <a href="#">Услуги</a>
             </li>
             <li>
-              <a href="">Абонементы</a>
+              <a href="#">Абонементы</a>
             </li>
             <li>
-              <a href="">Акции</a>
+              <a href="#">Акции</a>
             </li>
             <li>
-              <a href="">Тренеры</a>
+              <a href="#">Тренеры</a>
             </li>
             <li>
-              <a href="">Расписание</a>
+              <a href="#">Расписание</a>
             </li>
           </ul>
         </nav>
@@ -520,7 +520,7 @@
           <li>
             <a href="#" class="main-footer__social-link main-footer__social-link--insta"
               aria-label="Переход на инстаграмм Supergym">
-              <svg widht="27" height="27">
+              <svg width="27" height="27">
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>

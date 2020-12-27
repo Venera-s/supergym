@@ -1,4 +1,5 @@
 .coach {
+  position: relative;
   padding-bottom: 104px;
 }
 
@@ -25,40 +26,61 @@
   }
 }
 
+.coach__btn {
+  position: absolute;
+  width: 16px;
+  height: 32px;
+  border: none;
+  background: url("../img/arrow.svg") no-repeat;
+  background-size: cover;
+  background-color: transparent;
+
+  &--previous {
+    top: 45%;
+    left: 3%;
+  }
+
+  &--next {
+    top: 45%;
+    right: 3%;
+    transform: rotate(-180deg);
+  }
+}
+
 .coach__list {
   @include reset-list;
   position: relative;
   display: flex;
   flex-wrap: wrap;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 131px;
-    width: 16px;
-    height: 32px;
-  }
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 131px;
+  //   width: 16px;
+  //   height: 32px;
+  // }
 
-  &::before {
-    left: -57px;
-    background: url("../img/arrow-left.svg") no-repeat;
-    background-size: cover;
+  // &::before {
+  //   left: -57px;
+  //   background: url("../img/arrow-left.svg") no-repeat;
+  //   background-size: cover;
 
-    @media (max-width: $tablet-width-max) {
-      left: 0;
-    }
-  }
+  //   @media (max-width: $tablet-width-max) {
+  //     left: 0;
+  //   }
+  // }
 
-  &::after {
-    right: -57px;
-    background: url("../img/arrow-right.svg") no-repeat;
-    background-size: contain;
+  // &::after {
+  //   right: -57px;
+  //   background: url("../img/arrow-right.svg") no-repeat;
+  //   background-size: contain;
 
-    @media (max-width: $tablet-width-max) {
-      right: 0;
-    }
-  }
+  //   @media (max-width: $tablet-width-max) {
+  //     right: 0;
+  //   }
+  // }
 
   @media (max-width: $tablet-width-max) {
     justify-content: center;
@@ -92,7 +114,12 @@
 }
 
 .coach__img h3 {
+  @include reset-indents;
   margin-top: -55px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
 }
 
 .coach__card {
@@ -116,14 +143,6 @@
     font-size: 16px;
     line-height: 24px;
   }
-}
-
-.coach__name {
-  @include reset-indents;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
 }
 
 .coach__card-info {

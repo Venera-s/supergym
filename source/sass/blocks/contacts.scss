@@ -101,6 +101,8 @@
 }
 
 .contacts__info a {
+  color: $twilight-blue;
+
   @media (max-width: $tablet-width-max) {
     font-size: 18px;
     line-height: 27px;

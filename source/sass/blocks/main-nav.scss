@@ -1,4 +1,4 @@
-.main-nav__wrap {
+.main-nav {
   display: flex;
   width: 80%;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.main-nav__wrap > a {
+.main-nav > a {
   width: 30%;
 
   @media (max-width: $mobile-width-max) {
@@ -22,7 +22,7 @@
   }
 }
 
-.main-nav {
+.main-nav__wrap {
   display: flex;
   width: 90%;
 
@@ -32,7 +32,7 @@
 }
 
 
-.main-nav ul {
+.main-nav__wrap ul {
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;

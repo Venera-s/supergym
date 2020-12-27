@@ -422,7 +422,7 @@ html {
       background: -webkit-gradient(linear, left bottom, right top, from(#003d85), to(#b80027));
       background: linear-gradient(to right top, #003d85, #b80027); } }
 
-.main-header__logo-wrap {
+.main-header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,10 +431,10 @@ html {
           justify-content: space-between;
   padding-top: 30px; }
   @media (max-width: 1199px) {
-    .main-header__logo-wrap {
+    .main-header__logo {
       padding-top: 40px; } }
   @media (max-width: 767px) {
-    .main-header__logo-wrap {
+    .main-header__logo {
       padding-top: 20px; } }
 
 .main-header__tel {
@@ -686,13 +686,13 @@ html {
       width: 14px;
       height: 27px; } }
 
-.main-nav__wrap {
+.main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80%; }
   @media (max-width: 767px) {
-    .main-nav__wrap {
+    .main-nav {
       display: inline;
       -webkit-column-count: 2;
          -moz-column-count: 2;
@@ -706,24 +706,24 @@ html {
       width: 100%;
       padding-bottom: 25px; } }
 
-.main-nav__wrap > a {
+.main-nav > a {
   width: 30%; }
   @media (max-width: 767px) {
-    .main-nav__wrap > a {
+    .main-nav > a {
       display: block;
       width: auto;
       padding-bottom: 17px; } }
 
-.main-nav {
+.main-nav__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 90%; }
   @media (max-width: 767px) {
-    .main-nav {
+    .main-nav__wrap {
       width: auto; } }
 
-.main-nav ul {
+.main-nav__wrap ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,7 +732,7 @@ html {
   margin-right: auto;
   margin-left: auto; }
   @media (max-width: 767px) {
-    .main-nav ul {
+    .main-nav__wrap ul {
       display: inline;
       margin-right: 0;
       margin-left: 0; } }
@@ -1445,6 +1445,7 @@ html {
       padding: 13px 49px; } }
 
 .coach {
+  position: relative;
   padding-bottom: 104px; }
 
 .coach h2 {
@@ -1468,6 +1469,23 @@ html {
       font-size: 32px;
       line-height: 32px; } }
 
+.coach__btn {
+  position: absolute;
+  width: 16px;
+  height: 32px;
+  border: none;
+  background: url("../img/arrow.svg") no-repeat;
+  background-size: cover;
+  background-color: transparent; }
+  .coach__btn--previous {
+    top: 45%;
+    left: 3%; }
+  .coach__btn--next {
+    top: 45%;
+    right: 3%;
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg); }
+
 .coach__list {
   margin: 0;
   padding: 0;
@@ -1478,26 +1496,6 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .coach__list::before, .coach__list::after {
-    content: "";
-    position: absolute;
-    top: 131px;
-    width: 16px;
-    height: 32px; }
-  .coach__list::before {
-    left: -57px;
-    background: url("../img/arrow-left.svg") no-repeat;
-    background-size: cover; }
-    @media (max-width: 1199px) {
-      .coach__list::before {
-        left: 0; } }
-  .coach__list::after {
-    right: -57px;
-    background: url("../img/arrow-right.svg") no-repeat;
-    background-size: contain; }
-    @media (max-width: 1199px) {
-      .coach__list::after {
-        right: 0; } }
   @media (max-width: 1199px) {
     .coach__list {
       -webkit-box-pack: center;
@@ -1521,7 +1519,13 @@ html {
   position: relative; }
 
 .coach__img h3 {
-  margin-top: -55px; }
+  margin: 0;
+  padding: 0;
+  margin-top: -55px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center; }
 
 .coach__card {
   display: none;
@@ -1541,14 +1545,6 @@ html {
   padding-bottom: 18px;
   font-size: 16px;
   line-height: 24px; }
-
-.coach__name {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center; }
 
 .coach__card-info {
   padding-left: 10px;
@@ -2241,19 +2237,19 @@ html {
   margin: 0;
   padding: 0; }
 
-.workput__input-box {
+.workout__input-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 29px; }
   @media (max-width: 767px) {
-    .workput__input-box {
+    .workout__input-box {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
   @media (max-width: 767px) {
-    .workput__input-box {
+    .workout__input-box {
       margin-bottom: 40px; } }
 
 .workout__input-wrap {
@@ -2392,10 +2388,12 @@ html {
     font-size: 18px;
     line-height: 27px; } }
 
-@media (max-width: 1199px) {
-  .contacts__info a {
-    font-size: 18px;
-    line-height: 27px; } }
+.contacts__info a {
+  color: #102654; }
+  @media (max-width: 1199px) {
+    .contacts__info a {
+      font-size: 18px;
+      line-height: 27px; } }
 
 .contacts__wrap--one {
   padding-right: 65px;
