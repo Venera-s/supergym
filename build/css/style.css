@@ -413,7 +413,7 @@ html {
   background: linear-gradient(to right top, #003d85, #b80027); }
   @media (max-width: 1199px) {
     .main-header {
-      padding-bottom: 104px;
+      padding-bottom: 82px;
       background: -webkit-gradient(linear, left bottom, right top, from(#003d85), to(#b80027));
       background: linear-gradient(to right top, #003d85, #b80027); } }
   @media (max-width: 767px) {
@@ -464,10 +464,12 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 395px;
+  margin-right: 65px;
   padding-top: 111px; }
   @media (max-width: 1199px) {
     .main-header__intro {
       width: 324px;
+      margin-right: 30px;
       padding-top: 72px; } }
   @media (max-width: 767px) {
     .main-header__intro {
@@ -537,14 +539,6 @@ html {
   font-size: 14px;
   line-height: 21px; }
 
-.main-header__social-list li {
-  padding-bottom: 12px; }
-
-.main-header__social-list a {
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff; }
-
 .main-header__link {
   width: 230px;
   margin-left: auto;
@@ -565,33 +559,44 @@ html {
   padding: 0;
   list-style: none;
   width: 50px;
-  margin-top: -81px;
+  margin-top: -130px;
   margin-left: auto;
   text-align: right; }
   @media (max-width: 1199px) {
     .main-header__social-list {
       display: none; } }
 
+.main-header__social-list li {
+  padding-bottom: 12px; }
+
+.main-header__social-list a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff; }
+
 .main-header__intro-wrap {
-  position: relative; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 1365px) {
+    .main-header__intro-wrap {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .main-header__photo {
-  content: "";
-  position: absolute;
-  top: -1%;
-  left: 40%;
   width: 500px;
   height: 556px;
-  background: url("../img/header-back-desk.jpg") no-repeat;
+  background: url("../img/header-back-desk.jpg") 0 0 no-repeat;
   background-color: #000145; }
   @media (max-width: 1365px) {
     .main-header__photo {
-      top: 5%; } }
+      margin-top: 10px; } }
   @media (max-width: 1199px) {
     .main-header__photo {
-      left: 52%;
       width: 324px;
       height: 390px;
+      margin-top: 18px;
       background-size: cover; } }
   @media (max-width: 767px) {
     .main-header__photo {
@@ -2299,7 +2304,8 @@ html {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #102654;
-  border: 3px solid #ffffff; }
+  border: 3px solid #ffffff;
+  cursor: pointer; }
   @media (max-width: 1199px) {
     .workout__form button {
       width: 472px; } }

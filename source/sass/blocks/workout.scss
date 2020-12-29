@@ -119,6 +119,7 @@
   color: $white;
   background-color: $twilight-blue;
   border: 3px solid $white;
+  cursor: pointer;
 
   @media (max-width: $tablet-width-max) {
     width: 472px;
