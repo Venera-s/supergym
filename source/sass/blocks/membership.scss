@@ -207,12 +207,7 @@
   padding: 7px;
   background-color: $white;
 
-  @media (max-width: $tablet-width-max) {
-    margin-bottom: 0;
-  }
-
-
-  &:not(:nth-child(3n)) {
+  &:not(:last-child):not(:nth-child(3n)) {
     margin-right: 40px;
 
     @media (max-width: $tablet-width-max) {
@@ -221,11 +216,11 @@
   }
 
   @media (max-width: $desktop-width-max-2) {
-    margin-right: 40px;
+    width: 310px;
   }
 
   @media (max-width: $tablet-width-max) {
-    margin-right: 0;
+    margin-bottom: 0;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -241,10 +236,9 @@
   }
 }
 
-.membership__rate-list .membership__rate-item--border {
+.membership__rate-item--active {
   background-image: $gradient-border;
 }
-
 
 .membership__rate-wrap {
   display: flex;
@@ -253,6 +247,11 @@
   align-items: center;
   padding: 58px 47px;
   background-color: $white;
+
+  @media (max-width: $desktop-width-max-2) {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
 
   @media (max-width: $mobile-width-max) {
     padding: 43px 34px;

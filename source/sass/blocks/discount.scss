@@ -68,6 +68,12 @@
 }
 
 .discount__card:not(:last-child) {
+  margin-bottom: 15px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 0;
+  }
+
   @media (max-width: $mobile-width-max) {
     margin-bottom: 30px;
   }

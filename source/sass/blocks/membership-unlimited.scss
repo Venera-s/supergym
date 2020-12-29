@@ -1,10 +1,8 @@
 .membership-unlimited {
   display: flex;
-  align-items: flex-start;
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
-    align-items: stretch;
   }
 }
 
@@ -57,7 +55,7 @@
     top: 0;
     left: 0;
     width: 280px;
-    height: 462px;
+    height: 100%;
     background: url("../img/stock-tab.jpg") 40% 0 no-repeat;
     background-size: cover;
     background-color: #416adb;

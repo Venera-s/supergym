@@ -174,7 +174,7 @@
 .gym__photo button {
   @include reset-indents;
   position: absolute;
-  top: 77%;
+  top: 410px;
   left: 18%;
   width: 100px;
   height: 100px;
@@ -197,6 +197,7 @@
   }
 
   @media (max-width: $desktop-width-max-2) {
+    top: 330px;
     left: 50%;
     width: 73px;
     height: 73px;

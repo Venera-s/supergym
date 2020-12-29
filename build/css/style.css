@@ -921,7 +921,7 @@ html {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 77%;
+  top: 410px;
   left: 18%;
   width: 100px;
   height: 100px;
@@ -944,6 +944,7 @@ html {
             transform: translate(-50%, -50%) scale(0.9); }
   @media (max-width: 1365px) {
     .gym__photo button {
+      top: 330px;
       left: 50%;
       width: 73px;
       height: 73px; } }
@@ -1145,20 +1146,17 @@ html {
   margin-bottom: 20px;
   padding: 7px;
   background-color: #ffffff; }
-  @media (max-width: 1199px) {
-    .membership__rate-list li {
-      margin-bottom: 0; } }
-  .membership__rate-list li:not(:nth-child(3n)) {
+  .membership__rate-list li:not(:last-child):not(:nth-child(3n)) {
     margin-right: 40px; }
     @media (max-width: 1199px) {
-      .membership__rate-list li:not(:nth-child(3n)) {
+      .membership__rate-list li:not(:last-child):not(:nth-child(3n)) {
         margin-right: 0; } }
   @media (max-width: 1365px) {
     .membership__rate-list li {
-      margin-right: 40px; } }
+      width: 310px; } }
   @media (max-width: 1199px) {
     .membership__rate-list li {
-      margin-right: 0; } }
+      margin-bottom: 0; } }
   @media (max-width: 1199px) {
     .membership__rate-list li {
       width: 442px; }
@@ -1168,7 +1166,7 @@ html {
     .membership__rate-list li {
       width: 290px; } }
 
-.membership__rate-list .membership__rate-item--border {
+.membership__rate-item--active {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
   background-image: linear-gradient(to right bottom, #d10a42, #00359f); }
 
@@ -1187,6 +1185,10 @@ html {
           align-items: center;
   padding: 58px 47px;
   background-color: #ffffff; }
+  @media (max-width: 1365px) {
+    .membership__rate-wrap {
+      padding-right: 35px;
+      padding-left: 35px; } }
   @media (max-width: 767px) {
     .membership__rate-wrap {
       padding: 43px 34px; } }
@@ -1496,6 +1498,15 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 767px) {
+    .coach__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   @media (max-width: 1199px) {
     .coach__list {
       -webkit-box-pack: center;
@@ -1895,9 +1906,14 @@ html {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
-@media (max-width: 767px) {
-  .discount__card:not(:last-child) {
-    margin-bottom: 30px; } }
+.discount__card:not(:last-child) {
+  margin-bottom: 15px; }
+  @media (max-width: 1199px) {
+    .discount__card:not(:last-child) {
+      margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    .discount__card:not(:last-child) {
+      margin-bottom: 30px; } }
 
 @media (max-width: 1199px) {
   .discount__card--friend {
@@ -1910,19 +1926,13 @@ html {
 .membership-unlimited {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  display: flex; }
   @media (max-width: 767px) {
     .membership-unlimited {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch; } }
+              flex-direction: column; } }
 
 .membership-unlimited__wrap p {
   margin: 0;
@@ -1965,7 +1975,7 @@ html {
     top: 0;
     left: 0;
     width: 280px;
-    height: 462px;
+    height: 100%;
     background: url("../img/stock-tab.jpg") 40% 0 no-repeat;
     background-size: cover;
     background-color: #416adb; }
