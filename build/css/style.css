@@ -1068,114 +1068,105 @@ html {
   color: #102654;
   border-bottom: 2px solid #d10a42; }
 
-.membership__rate-item p {
+.membership__item p {
   margin: 0;
   padding: 0; }
-  .membership__rate-item p:first-of-type {
+  .membership__item p:first-of-type {
     padding-bottom: 13px;
     font-weight: 700;
     font-size: 24px;
     line-height: 27px;
     color: #102654; }
     @media (max-width: 767px) {
-      .membership__rate-item p:first-of-type {
+      .membership__item p:first-of-type {
         padding-bottom: 11px;
         font-size: 22px;
         line-height: 25px; } }
-  .membership__rate-item p:last-of-type {
+  .membership__item p:last-of-type {
     padding-bottom: 33px;
     font-weight: 700;
     font-size: 58px;
     line-height: 87px;
     color: #103aae; }
     @media (max-width: 767px) {
-      .membership__rate-item p:last-of-type {
+      .membership__item p:last-of-type {
         padding-bottom: 30px;
         font-size: 46px;
         line-height: 69px; } }
 
-.membership__rate-price {
-  position: relative;
+.membership__price {
   z-index: 1; }
-  .membership__rate-price::before {
-    position: absolute;
-    top: -27px;
-    left: -19px;
-    width: 100px;
-    height: 100px;
-    font-size: 98px;
-    color: #e8e8e8;
-    opacity: 0.48;
-    z-index: -1; }
-    @media (max-width: 1199px) {
-      .membership__rate-price::before {
-        top: -22px;
-        left: -18px; } }
-    @media (max-width: 767px) {
-      .membership__rate-price::before {
-        font-size: 80px; } }
-  .membership__rate-price--5000::before {
-    content: "5000"; }
-  .membership__rate-price--1700::before {
-    content: "1700"; }
-  .membership__rate-price--2700::before {
-    content: "2700"; }
 
-.membership__rate-item p:first-of-type + p {
+.membership__shadow {
+  position: absolute;
+  top: 133px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48; }
+  @media (max-width: 767px) {
+    .membership__shadow {
+      top: 110px;
+      font-size: 80px;
+      line-height: 120px; } }
+
+.membership__item p:first-of-type + p {
   padding-bottom: 70px;
   color: #495a7d; }
   @media (max-width: 767px) {
-    .membership__rate-item p:first-of-type + p {
+    .membership__item p:first-of-type + p {
       padding-bottom: 58px; } }
 
-.membership__rate-list {
+.membership__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (max-width: 1365px) {
-    .membership__rate-list {
+    .membership__list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
   @media (max-width: 1199px) {
-    .membership__rate-list {
+    .membership__list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
 
-.membership__rate-list li {
+.membership__list li {
   width: 360px;
   margin-bottom: 20px;
   padding: 7px;
   background-color: #ffffff; }
-  .membership__rate-list li:not(:last-child):not(:nth-child(3n)) {
+  .membership__list li:not(:last-child):not(:nth-child(3n)) {
     margin-right: 40px; }
     @media (max-width: 1199px) {
-      .membership__rate-list li:not(:last-child):not(:nth-child(3n)) {
+      .membership__list li:not(:last-child):not(:nth-child(3n)) {
         margin-right: 0; } }
   @media (max-width: 1365px) {
-    .membership__rate-list li {
+    .membership__list li {
       width: 310px; } }
   @media (max-width: 1199px) {
-    .membership__rate-list li {
+    .membership__list li {
       margin-bottom: 0; } }
   @media (max-width: 1199px) {
-    .membership__rate-list li {
+    .membership__list li {
       width: 442px; }
-      .membership__rate-list li:not(:last-child) {
+      .membership__list li:not(:last-child) {
         margin-bottom: 40px; } }
   @media (max-width: 767px) {
-    .membership__rate-list li {
+    .membership__list li {
       width: 290px; } }
 
-.membership__rate-item--active {
+.membership__item--active {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
   background-image: linear-gradient(to right bottom, #d10a42, #00359f); }
 
-.membership__rate-wrap {
+.membership__box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1191,18 +1182,18 @@ html {
   padding: 58px 47px;
   background-color: #ffffff; }
   @media (max-width: 1365px) {
-    .membership__rate-wrap {
+    .membership__box {
       padding-right: 35px;
       padding-left: 35px; } }
   @media (max-width: 767px) {
-    .membership__rate-wrap {
+    .membership__box {
       padding: 43px 34px; } }
 
-.membership__rate-btn {
+.membership__btn {
   padding: 24px 43px;
   color: #102654;
   border: 2px solid #102654; }
-  .membership__rate-btn--color {
+  .membership__btn--color {
     color: #ffffff;
     background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
     background-image: linear-gradient(90deg, #ed0233, #003eb7);
