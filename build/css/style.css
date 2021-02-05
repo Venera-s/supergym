@@ -2428,14 +2428,57 @@ html {
     .contacts__wrap--two {
       padding-left: 0; } }
 
+.timetable {
+  margin-top: 120px; }
+
+.timetable__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .timetable h1 {
+  margin: 0;
+  padding: 0;
+  padding: 0 30px 62px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #102654; }
 
-.timetable__title th {
-  color: red; }
+.timetable tr {
+  text-align: center;
+  color: #102654; }
+
+.timetable-table {
+  width: 1157px;
+  table-layout: fixed;
+  padding-bottom: 120px;
+  text-align: center;
+  border-spacing: 8px; }
+
+.timetable-table__title th {
+  padding: 27px 10px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 2px solid #15367a; }
+  .timetable-table__title th:first-child {
+    width: 65px;
+    border: none; }
+
+.timetable-table td {
+  width: 148px;
+  padding: 42px 10px;
+  font-size: 18px;
+  border: 2px solid #15367a; }
+  .timetable-table td:not(:first-child) {
+    width: 148px;
+    line-height: 27px;
+    color: #102654;
+    background-color: #f8f9fc;
+    border: none; }
