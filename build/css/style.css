@@ -679,15 +679,18 @@ html {
         padding-right: 20px; } }
 
 .main-footer__social-link svg {
-  fill: red; }
+  fill: #ffffff; }
+  .main-footer__social-link svg:hover, .main-footer__social-link svg:focus {
+    fill-opacity: 0.8; }
+  .main-footer__social-link svg:active {
+    fill-opacity: 0.5; }
 
 .main-footer__social-list a {
   color: #ffffff; }
 
 .main-footer__social-link--vk svg {
   width: 24px;
-  height: 13px;
-  fill: red; }
+  height: 13px; }
   @media (max-width: 767px) {
     .main-footer__social-link--vk svg {
       width: 32px;
