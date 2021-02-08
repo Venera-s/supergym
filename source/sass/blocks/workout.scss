@@ -128,4 +128,15 @@
   @media (max-width: $mobile-width-max) {
     width: 100%;
   }
+
+  &:hover,
+  &:focus {
+    color: rgba($white, 0.8);
+    border: 3px solid rgba($white, 0.8);
+  }
+
+  &:active {
+    color: rgba($white, 0.5);
+    border: 3px solid rgba($white, 0.5);
+  }
 }

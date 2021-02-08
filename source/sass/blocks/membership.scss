@@ -109,6 +109,26 @@
   border-bottom: 2px solid #d10a42;
 }
 
+.membership__item {
+  &--active {
+    background-image: $gradient-border;// для JS
+  }
+
+  &:hover,
+  &:focus {
+    background-image: $gradient-border;
+  }
+
+  &:hover .membership__btn,
+  &:focus .membership__btn {
+    color: $white;
+    background-image: linear-gradient(90deg, #ed0233, #003eb7);
+    background-origin: border-box;
+    border-color: transparent;
+  }
+}
+
+
 .membership__item p {
   @include reset-indents;
 
@@ -218,10 +238,6 @@
   }
 }
 
-.membership__item--active {
-  background-image: $gradient-border;
-}
-
 .membership__box {
   position: relative;
   display: flex;
@@ -246,10 +262,17 @@
   color: $twilight-blue;
   border: 2px solid $twilight-blue;
 
-  &--color {
+  &:focus {
     color: $white;
     background-image: linear-gradient(90deg, #ed0233, #003eb7);
     background-origin: border-box;
     border-color: transparent;
   }
+
+  // &--color {
+  //   color: $white;
+  //   background-image: linear-gradient(90deg, #ed0233, #003eb7);
+  //   background-origin: border-box;
+  //   border-color: transparent;
+  // }
 }

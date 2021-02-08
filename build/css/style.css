@@ -454,6 +454,10 @@ html {
     .main-header__tel {
       font-size: 20px;
       line-height: 20px; } }
+  .main-header__tel:hover, .main-header__tel:focus {
+    color: rgba(255, 255, 255, 0.8); }
+  .main-header__tel:active {
+    color: rgba(255, 255, 255, 0.5); }
 
 .main-header__intro {
   display: -webkit-box;
@@ -553,6 +557,12 @@ html {
   @media (max-width: 767px) {
     .main-header__link {
       width: 100%; } }
+  .main-header__link:hover, .main-header__link:focus {
+    color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0.8); }
+  .main-header__link:active {
+    color: rgba(255, 255, 255, 0.5);
+    border: 4px solid rgba(255, 255, 255, 0.5); }
 
 .main-header__social-list {
   margin: 0;
@@ -573,6 +583,10 @@ html {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff; }
+  .main-header__social-list a:hover, .main-header__social-list a:focus {
+    color: rgba(255, 255, 255, 0.8); }
+  .main-header__social-list a:active {
+    color: rgba(255, 255, 255, 0.5); }
 
 .main-header__intro-wrap {
   display: -webkit-box;
@@ -664,12 +678,16 @@ html {
       .main-footer__social-list li:not(:last-child) {
         padding-right: 20px; } }
 
+.main-footer__social-link svg {
+  fill: red; }
+
 .main-footer__social-list a {
   color: #ffffff; }
 
 .main-footer__social-link--vk svg {
   width: 24px;
-  height: 13px; }
+  height: 13px;
+  fill: red; }
   @media (max-width: 767px) {
     .main-footer__social-link--vk svg {
       width: 32px;
@@ -762,6 +780,12 @@ html {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff; }
+  .main-nav__list a:hover, .main-nav__list a:focus {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
+  .main-nav__list a:active {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
   @media (max-width: 767px) {
     .main-nav__list a {
       font-size: 16px;
@@ -1068,6 +1092,22 @@ html {
   color: #102654;
   border-bottom: 2px solid #d10a42; }
 
+.membership__item--active {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+  background-image: linear-gradient(to right bottom, #d10a42, #00359f); }
+
+.membership__item:hover, .membership__item:focus {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+  background-image: linear-gradient(to right bottom, #d10a42, #00359f); }
+
+.membership__item:hover .membership__btn,
+.membership__item:focus .membership__btn {
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+  background-image: linear-gradient(90deg, #ed0233, #003eb7);
+  background-origin: border-box;
+  border-color: transparent; }
+
 .membership__item p {
   margin: 0;
   padding: 0; }
@@ -1161,10 +1201,6 @@ html {
     .membership__list li {
       width: 290px; } }
 
-.membership__item--active {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
-  background-image: linear-gradient(to right bottom, #d10a42, #00359f); }
-
 .membership__box {
   position: relative;
   display: -webkit-box;
@@ -1193,7 +1229,7 @@ html {
   padding: 24px 43px;
   color: #102654;
   border: 2px solid #102654; }
-  .membership__btn--color {
+  .membership__btn:focus {
     color: #ffffff;
     background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
     background-image: linear-gradient(90deg, #ed0233, #003eb7);
@@ -1424,23 +1460,28 @@ html {
 
 .promo__btn {
   display: block;
-  padding: 25px 110px;
+  padding: 25px 15px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: center;
   color: #ffffff;
   border: 4px solid #ffffff; }
   @media (max-width: 1199px) {
     .promo__btn {
-      padding: 12px 50px;
+      padding-top: 12px;
+      padding-bottom: 12px;
       font-size: 10px;
       line-height: 12px;
       border-width: 2px; } }
-  @media (max-width: 767px) {
-    .promo__btn {
-      padding: 13px 49px; } }
+  .promo__btn:hover, .promo__btn:focus {
+    color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0.8); }
+  .promo__btn:active {
+    color: rgba(255, 255, 255, 0.5);
+    border: 4px solid rgba(255, 255, 255, 0.5); }
 
 .coach {
   position: relative;
@@ -1962,6 +2003,12 @@ html {
   text-transform: uppercase;
   border-bottom: 1px solid #ffffff;
   color: #ffffff; }
+  .membership-unlimited__wrap a:focus, .membership-unlimited__wrap a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+  .membership-unlimited__wrap a:active {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
 .membership-unlimited__background {
   position: relative; }
@@ -2062,6 +2109,12 @@ html {
   text-transform: uppercase;
   color: #1c3374;
   border-bottom: 1px solid #1c3374; }
+  .membership-discount__wrap a:focus, .membership-discount__wrap a:hover {
+    color: rgba(28, 51, 116, 0.8);
+    border-bottom: 1px solid rgba(28, 51, 116, 0.8); }
+  .membership-discount__wrap a:active {
+    color: rgba(28, 51, 116, 0.5);
+    border-bottom: 1px solid rgba(28, 51, 116, 0.5); }
 
 @media (max-width: 1199px) {
   .membership-discount__wrap--indent h2 {
@@ -2303,6 +2356,12 @@ html {
   @media (max-width: 767px) {
     .workout__form button {
       width: 100%; } }
+  .workout__form button:hover, .workout__form button:focus {
+    color: rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8); }
+  .workout__form button:active {
+    color: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.5); }
 
 .contacts {
   width: 50%;
@@ -2401,6 +2460,10 @@ html {
     .contacts__info a {
       font-size: 18px;
       line-height: 27px; } }
+  .contacts__info a:hover, .contacts__info a:focus {
+    color: rgba(16, 38, 84, 0.8); }
+  .contacts__info a:active {
+    color: rgba(16, 38, 84, 0.5); }
 
 .contacts__wrap--one {
   padding-right: 65px;

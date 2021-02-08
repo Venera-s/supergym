@@ -47,6 +47,17 @@
   text-transform: uppercase;
   color: $twilight-light-blue;
   border-bottom: 1px solid $twilight-light-blue;
+
+  &:focus,
+  &:hover {
+    color: rgba($twilight-light-blue, 0.8);
+    border-bottom: 1px solid rgba($twilight-light-blue, 0.8);
+  }
+
+  &:active {
+    color: rgba($twilight-light-blue, 0.5);
+    border-bottom: 1px solid rgba($twilight-light-blue, 0.5);
+  }
 }
 
 .membership-discount__wrap--indent h2 {
