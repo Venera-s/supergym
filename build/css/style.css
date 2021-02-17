@@ -1482,9 +1482,15 @@ html {
   .promo__btn:hover, .promo__btn:focus {
     color: rgba(255, 255, 255, 0.8);
     border: 4px solid rgba(255, 255, 255, 0.8); }
+    @media (max-width: 1199px) {
+      .promo__btn:hover, .promo__btn:focus {
+        border-width: 2px; } }
   .promo__btn:active {
     color: rgba(255, 255, 255, 0.5);
     border: 4px solid rgba(255, 255, 255, 0.5); }
+    @media (max-width: 1199px) {
+      .promo__btn:active {
+        border-width: 2px; } }
 
 .coach {
   position: relative;

@@ -273,10 +273,18 @@
   &:focus {
     color: rgba($white, 0.8);
     border: 4px solid rgba($white, 0.8);
+
+    @media (max-width: $tablet-width-max) {
+      border-width: 2px;
+    }
   }
 
   &:active {
     color: rgba($white, 0.5);
     border: 4px solid rgba($white, 0.5);
+
+    @media (max-width: $tablet-width-max) {
+      border-width: 2px;
+    }
   }
 }
